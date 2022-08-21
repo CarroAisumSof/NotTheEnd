@@ -1,0 +1,1205 @@
+/*---------------------------------------------------------------- HOMEPAGE---------------------------------------------------------- */
+/* ............................................ PAGE LEVEL GRID........................................... */
+#homepage {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1024px 2050px 160px;
+    grid-template-areas:
+    "homepageHeader"
+    "homepageMain"
+    "footer";
+}
+
+#homepageMain {
+    grid-area: homepageMain;
+    justify-self: center;
+    width: 100%
+}
+
+
+/* ............................................ PAGE LEVEL GRID........................................... */
+
+.headerHomepage{
+    background-image: url(../images/buenos-aires.png);
+    background-color: #FFF3D4;
+    height: 1024px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: homepageHeader;
+    justify-self: center;
+    align-self: center;
+}
+
+.headerHomepage nav {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.headerHomepage nav a img {
+    width: 35px;
+    height: 35px;
+}
+
+.headerHomepage nav ul {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.headerHomepage nav ul li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:120px;
+    height:35px;
+    background-color:#795062;
+    text-decoration:none;
+    border-radius: 3px;
+    font-family: Raleway;
+    
+}
+
+.headerHomepage nav ul li :hover {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:120px;
+    height:35px;
+    background-color:#CCD3DE;
+    color:#795062;
+    
+}
+
+.headerHomepage nav ul li a{
+    text-decoration: none;
+    color:#CCD3DE;
+}
+
+.headerHomepageHeadline{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: Corben;
+    src: url(../styles/fonts/Corben-Regular.ttf);
+}
+
+.headerHomepageHeadline H1{
+    font-size: 200px;
+    line-height: 230px;
+    color:#795062;
+    font-family: Corben;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../styles/fonts/Ubuntu-Regular.ttf);
+}
+
+.headerHomepageHeadline H2{
+    padding-top: 20px;
+    font-size: 50px;
+    line-height: 60px;
+    color:#795062;
+    font-family: Ubuntu;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+/* ---------------------------------------------Yellow background ------------------------------------------------------------------*/
+
+.yellowBackground{
+    height: 500px;
+    background-image: url(../images/Diseño\ sin\ título.png);
+    background-position: right;
+    background-color: #FFF3D4;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    grid-area: yellowBackground;
+
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../styles/fonts/Raleway-Bold.ttf);
+}
+
+.yellowBackground h3{
+    width: 700px;
+    font-family: Raleway;
+    font-size: 48px;
+    text-align: center;
+    color:#795062;
+}
+
+.yellowBackground h3 span{
+    width: 700px;
+    font-family: Raleway;
+    font-size: 48px;
+    text-align: center;
+    color:#6C7C95;
+}
+
+/* ------------------------------------------------------White background ------------------------------------------------------------------*/
+.whiteSection {
+    grid-area: whiteSection;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    background-color: #FFFFFF;
+    display:grid;
+    grid-template-areas :
+    ". baires1 . baires2 ."
+    ". cemetery2 . cemetery1 ."
+    ". caminito1 . caminito2 ."
+    ". bar2 . bar1 .";
+    grid-template-columns: 200px 1fr 30px 1fr 200px;
+    grid-template-rows:350px 350px 350px 350px;
+}
+
+#baires1 {
+    grid-area: baires1;
+    align-self: center;
+    justify-self: center;
+}
+
+#baires2 {
+    grid-area: baires2;
+    align-self: center;
+    justify-self: center;
+}
+
+#cemetery1 {
+    grid-area: cemetery1;
+    align-self: center;
+    justify-self: center;
+}
+
+#cemetery2 {
+    grid-area: cemetery2;
+    align-self: center;
+    justify-self: center;
+}
+
+#caminito1 {
+    grid-area: caminito1;
+    align-self: center;
+    justify-self: center;
+}
+
+#caminito2 {
+    grid-area: caminito2;
+    align-self: center;
+    justify-self: center;
+}
+
+
+#bar1 {
+    grid-area: bar1;
+    align-self: center;
+    justify-self: center;
+}
+
+#bar2 {
+    grid-area: bar2;
+    align-self: center;
+    justify-self: center;
+}
+
+/* ............................................ WHITE SECTION GRID........................................... */
+
+.whiteSection article img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFF3D4;
+    border-radius: 10px;
+    height: 250px;
+    width:250px;
+}
+
+.whiteSection article p{
+    width: 450px;
+    font-family: Raleway;
+    font-size: 24px;
+    color: #6C7C95;
+    text-align:center;
+}
+
+.articleButton {
+    display:flex;
+    grid-area: articleButton;
+    justify-content: center;
+    align-content: center;
+}
+
+.articleButton p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    background-color: #6C7C95;
+    border-radius: 5px;
+    font-family: Raleway;
+    font-size: 24px;
+    text-align:center;
+}
+
+.articleButton p :hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    background-color: #CCD3DE;
+    color: #6C7C95;
+    border-radius: 5px;
+    font-family: Raleway;
+    font-size: 24px;
+    text-align:center;
+}
+
+.articleButton p a {
+    color: #CCD3DE;
+    text-decoration: none;
+
+}
+
+.articleButton p a :hover{
+    text-decoration: none;
+
+}
+
+/* ............................................ WHITE SECTION GRID........................................... */
+/* ----------------------------------------------------------------SUBPAGES ------------------------------------------------------------*/
+.genLayout {
+    width: 100%;
+    display:grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 2fr 6fr 1fr;
+    grid-template-areas:
+    "headerSubpages headerSubpages headerSubpages"
+    ". main ."
+    "footer footer footer";
+}
+
+.mainSubpages {
+    width: 100%;
+    grid-area: main;
+    
+}
+
+
+/* ------------------------------------------------------------- Navigation ------------------------------------------------------------*/
+
+
+.navSubpages {
+    background-color: #FFF3D4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: navSupbages;
+}
+
+.navSubpages a img {
+    width: 35px;
+    height: 35px;
+}
+
+.navSubpages ul {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navSubpages ul li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:120px;
+    height:35px;
+    background-color:#795062;
+    text-decoration:none;
+    border-radius: 3px;
+    font-family: raleway;
+    
+}
+
+.navSubpages ul li :hover {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:120px;
+    height:35px;
+    background-color:#b38298;
+    color:#CCD3DE;
+    border-radius: 3px;
+    
+}
+
+.navSubpages ul li a{
+    text-decoration: none;
+    color:#CCD3DE;
+}
+
+/* ------------------------------------------------------------- Navigation ------------------------------------------------------------*/
+
+/* --------------------------------------------------------------FOOTER------------------------------------------------------------ */
+
+.footerNav {
+    padding-bottom: 100px;
+    background-color: #795062;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: footer;
+}
+
+.footerNav a img {
+    width: 35px;
+    height: 35px;
+}
+
+.footerNav ul {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerNav ul li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:120px;
+    height:35px;
+    background-color:#CCD3DE;
+    text-decoration:none;
+    border-radius: 3px;
+    font-family: raleway;
+    
+}
+
+.footerNav ul li :hover {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:120px;
+    height:35px;
+    background-color:#d7dfeb;
+    color:#795062;
+    border-radius: 3px;
+    
+}
+
+.footerNav ul li a{
+    text-decoration: none;
+    color:#795062;
+}
+/* --------------------------------------------------------------FOOTER------------------------------------------------------------ */
+
+/* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
+
+.headerSubpages{
+    height: 430px;
+    background-color: #6C7C95;
+    grid-area: headerSubpages;
+}
+
+.mastheadSubpages h1{
+    font-family: Raleway;
+    font-size: 48px;
+    color: #FFF3D4;
+    grid-area: headerHeadline
+}
+
+.mastheadSubpages img {
+    grid-area:headerImage;
+}
+
+.mastheadSubpages {
+    display:grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 250px 50px 30px;
+    grid-template-areas: 
+    "headerImage ."
+    "headerImage headerHeadline"
+    "headerImage ."
+    ;
+
+}
+
+
+/* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
+
+/* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
+
+.winePLeftAlign{
+    font-family: Raleway;
+    font-size: 24px;
+    color: #795062;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1,5;
+}
+
+.blueH2{
+    padding-left: 50px;
+    font-family: raleway;
+    font-size: 48;
+    color: #6C7C95;
+}
+
+.winePCenterAlign{
+    font-family: Raleway;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1,5;
+    text-align: center;
+    text-decoration: none;
+}
+
+.winePCenterAlign p{
+    color: #795062;
+}
+
+.winePCenterAlign p a{
+    text-decoration:none;
+    color: #6C7C95;
+}
+
+/* ------------------------------------------------------GALERIA------------------------------------------------------------------- */
+
+.galeria{
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.galeria img{
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: transform 0.5s;
+    justify-self: center;
+    align-self: center;
+    
+}
+/* zoom */
+.galeria img:hover {
+    transform: scale(1.2); 
+  }
+
+/* ------------------------------------------------------GALERIA------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------BUENOS AIRES------------------------------------------------------------------- */
+.bairesBackgroundArquitectura{
+    height: 350px;
+    width: 100%;
+    background-image: url(http://drive.google.com/uc?export=view&id=1C1uxtLj7zJzG4Nex2YDUswn3YZxKvGgx);
+    background-repeat: no-repeat;
+    background-position:stretch;
+    background-size:100%;
+}
+
+.bairesBackgroundArquitectura h1{
+    height:350px;
+    font-size: 48px;
+    line-height: 50px;
+    padding-top: 150px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 48;
+    color: #795062;;
+}
+
+.bairesBackgroundHistoria{
+    height: 350px;
+    width:100%;
+    background-image: url(http://drive.google.com/uc?export=view&id=1kZaVIVP5oufq0qsisjwWjNZGVF1QjGR9);
+    background-repeat: no-repeat;
+    background-position:stretch;
+    background-size:100%;
+}
+
+.bairesBackgroundHistoria h1{
+    height:350px;
+    font-size: 48px;
+    line-height: 50px;
+    padding-top: 150px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 48;
+    color: #795062;;
+}
+
+.bairesBackgroundGastronomia{
+    height: 350px;
+    width:100%;
+    background-image: url(http://drive.google.com/uc?export=view&id=1h1amiprKCW1Na5V_CQ4ZRG-G2Pl6Ah3K);
+    background-repeat: no-repeat;
+    background-position:stretch;
+    background-size:100%;
+}
+
+.bairesBackgroundGastronomia h1{
+    height:350px;
+    font-size: 48px;
+    line-height: 50px;
+    padding-top: 150px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 48;
+    color: #795062;;
+}
+
+.bairesBackgroundMusica{
+    height: 350px;
+    width:100%;
+    background-image: url(http://drive.google.com/uc?export=view&id=1zWXxd5aGW7OSYrrH5Zy_F9iDtXG44FUc);
+    background-repeat: no-repeat;
+    background-position:stretch;
+    background-size:100%;
+}
+
+.bairesBackgroundMusica h1{
+    height:350px;
+    font-size: 48px;
+    line-height: 50px;
+    padding-top: 150px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 48;
+    color: #795062;;
+}
+
+/* ------------------------------------------------------BUENOS AIRES------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------Q&A------------------------------------------------------------------- */
+
+
+.pregunta{
+    background-color: #FFF3D4;
+    color: #795062;
+    line-height: 60px;
+    font-family: Raleway;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+.pregunta{
+    padding-left: 20px;
+
+}
+
+.pregunta{
+    background-color: #FFF3D4;
+    color: #795062;
+    line-height: 60px;
+    font-family: Raleway;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+.pregunta{
+    padding-left: 20px;
+
+}
+
+.respuesta{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    color: #6C7C95;
+    font-family: Raleway;
+    font-size: 18x;
+
+}
+
+/* ----------------------------------------------------------------------FORMQA----------------------------------------------------------- */
+
+
+.formQA{
+    padding-bottom: 30px;
+    padding-left: 50px;
+    font-family: Raleway;
+    font-size: 14px;
+    color: #795062;
+}
+
+.formQA input{
+    width: 500px;
+    padding-left: 10px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #FFF3D4;
+    border:none;
+    border-radius:5px;
+}
+
+.formQA select{
+    width: 510px;
+    padding-left: 10px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #FFF3D4;
+    border:none;
+    border-radius:5px;
+}
+
+.formQA textarea{
+    width: 500px;
+    height: 300px;
+    padding-left: 10px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #FFF3D4;
+    border:none;
+    border-radius:5px;
+}
+
+.formQA label{
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.formQA input[type=submit] {
+    width: 200px;
+    margin-top: 20px;
+    margin-right:10px;
+    background-color: #6C7C95;
+    color: #FFFFFF;
+}
+
+.formQA input[type=reset] {
+    width: 200px;
+    margin-top:20px;
+    background-color: #CCD3DE;
+    color: #FFFFFF;
+}
+
+/* -------------------------------------------------------REGISTERFORM---------------------------------------------------------------- */
+
+.registerForm{
+    padding-left: 200px;
+    font-family: Raleway;
+    font-size: 14px;
+    color: #795062;
+}
+
+.registerForm input{
+    width: 800px;
+    padding-left: 10px;
+    height: 40px;
+    margin-bottom:10px;
+    background-color: #FFF3D4;
+    border:none;
+    border-radius:5px;
+}
+
+.registerForm select{
+    width: 810px;
+    padding-left: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #FFF3D4;
+    border:none;
+    border-radius:5px;
+}
+
+.registerForm textarea{
+    width: 800px;
+    height: 300px;
+    padding-left: 10px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFF3D4;
+    border:none;
+    border-radius:5px;
+}
+
+.registerForm label{
+    line-height: 30px;
+}
+
+.registerForm p{
+    color: #6C7C95;
+    font-size: 10px;
+}
+
+.registerForm input[type=radio] {
+    height: 10px;
+    width: 10px;
+}
+
+.registerForm input[type=submit] {
+    width: 200px;
+    margin-top: 20px;
+    margin-right:10px;
+    background-color: #6C7C95;
+    color: #FFFFFF;
+}
+
+.registerForm input[type=reset] {
+    width: 200px;
+    margin-top:20px;
+    background-color: #CCD3DE;
+    color: #FFFFFF;
+}
+
+/* --------------------------------------------------400px viewport ----------------------------------------------*/
+
+@media screen and (max-width:400px) {
+    #homepage {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1000px 1600px 100px;
+        grid-template-areas:
+        "homepageHeader"
+        "homepageMain"
+        "footer";
+    }
+
+    .whiteSection {
+    margin-top: 30px;
+    grid-area: whiteSection;
+    width: 100%;
+    background-color: #FFFFFF;
+    display:grid;
+    grid-template-areas :
+                        ". baires1 ."
+                        ". baires2 ."
+                        ". cemetery1 ."
+                        ". cemetery2 ."
+                        ". caminito1 ."
+                        ". caminito2 ."
+                        ". bar1 ."
+                        ". bar2 .";
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows:100px;
+    }
+
+    .headerHomepageHeadline H1{
+        font-size: 100px;
+        line-height: 110px;
+        color:#795062;
+        font-family: Corben;
+        text-align: center;
+        }
+        
+        .headerHomepageHeadline H2{
+        padding-top: 15px;
+        font-size: 30px;
+        line-height: 35px;
+        color:#795062;
+        font-family: Ubuntu;
+        letter-spacing: 20px;
+        text-align: center;
+        }
+
+        .yellowBackground h3{
+            width: 280px;
+            font-family: Raleway;
+            font-size: 25px;
+            text-align: center;
+            color:#795062;
+        }
+        
+        .yellowBackground h3 span{
+            width: 280px;
+            font-family: Raleway;
+            font-size: 25px;
+            text-align: center;
+            color:#6C7C95;
+        }
+        
+        .whiteSection article img{
+        border-style: solid;
+        border-width: 5px;
+        border-color: #FFF3D4;
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+        align-self: center;
+        justify-self: center;
+        }
+
+        .whiteSection article p{
+        width: 280px;
+        font-family: Raleway;
+        font-size: 18px;
+        color: #6C7C95;
+        text-align:center;
+        }
+
+        .articleButton {
+        margin-top: 30px;
+        display:flex;
+        grid-area: articleButton;
+        justify-content: center;
+        align-content: center;
+        }
+
+        .articleButton p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 25px;
+        background-color: #6C7C95;
+        border-radius: 5px;
+        font-family: Raleway;
+        font-size: 20px;
+        text-align:center;
+        }
+
+        .articleButton p a {
+        color: #CCD3DE;
+        text-decoration: none;
+        }
+
+
+    .headerSubpages{
+        background-color: #FFFFFF;
+    }
+    
+    .genLayout{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr auto 1fr;
+        grid-template-areas:
+        "headerSubpages"
+        "main"
+        "footer ";
+    }
+
+    .mastheadSubpages h1{
+        font-family: Raleway;
+        font-size: 30px;
+        color: #795062;
+        justify-self: center;
+        align-self:center;
+        text-align: left;
+    }
+    
+    .mastheadSubpages img {
+        grid-area:headerImage;
+        width:100%
+    }
+    
+    .mastheadSubpages {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 100%;
+        grid-template-areas: 
+        "headerHeadline"
+        "headerImage"
+        ;
+    
+    }
+
+    .footerNav {
+        padding-bottom: 50px;
+        background-color: #795062;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-area: footer;
+    }
+    
+    .footerNav ul {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footerNav ul li {
+        display:flex;
+        justify-content: right;
+        flex-wrap: wrap;
+        width:120px;
+        height:35px;
+        background-color:#795062;
+        text-decoration:none;
+        border-radius: 3px;
+        font-family: raleway;
+        
+    }
+    
+    .footerNav ul li a{
+        text-decoration: none;
+        color:#CCD3DE;
+    }
+
+    .galeria{
+        padding-left: 0px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr (repeat(8));
+        justify-self: center;
+        align-self: center;
+    
+    }
+    
+    .galeria img{
+        padding-left: 0px;
+        width:80%;
+        margin-top: 20px;
+        transition: transform 0.5s;
+        justify-self: center;
+        align-self: center;
+        padding-left: 0px;
+            
+    }
+
+/* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
+
+    .winePLeftAlign{
+        font-family: Raleway;
+        font-size: 20px;
+        color: #795062;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 1,5;
+        text-align: center;
+    }
+
+    .blueH2{
+        padding-left: 50px;
+        font-family: raleway;
+        font-size: 48;
+        color: #6C7C95;
+    }
+
+    .winePCenterAlign{
+        font-family: Raleway;
+        color: #795062;
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1,5;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .winePCenterAlign p{
+        color: #795062;
+    }
+
+    .winePCenterAlign p a{
+        text-decoration:none;
+        color: #6C7C95;
+    }
+
+    /* ------------------------------------------------------BUENOS AIRES------------------------------------------------------------------- */
+    .bairesBackgroundArquitectura{
+        width: 100%;
+        height: auto;
+        background-image: url(http://drive.google.com/uc?export=view&id=1C1uxtLj7zJzG4Nex2YDUswn3YZxKvGgx);
+        background-repeat: no-repeat;
+        background-position:stretch;
+        background-size:100%;
+    }
+
+    .bairesBackgroundArquitectura h1{
+        font-size: 30px;
+        height:50px;
+        line-height: 36px;
+        text-align: center;
+        font-family: Raleway;
+        color: #795062;
+    }
+
+    .bairesBackgroundHistoria{
+        width: 100%;
+        height: auto;
+        background-image: url(http://drive.google.com/uc?export=view&id=1kZaVIVP5oufq0qsisjwWjNZGVF1QjGR9);
+        background-repeat: no-repeat;
+        background-position:stretch;
+        background-size:100%;
+    }
+
+    .bairesBackgroundHistoria h1{
+        font-size: 30px;
+        height:50px;
+        line-height: 36px;
+        text-align: center;
+        font-family: Raleway;
+        color: #795062;
+    }
+
+    .bairesBackgroundGastronomia{
+        width: 100%;
+        height: auto;
+        background-image: url(http://drive.google.com/uc?export=view&id=1h1amiprKCW1Na5V_CQ4ZRG-G2Pl6Ah3K);
+        background-repeat: no-repeat;
+        background-position:stretch;
+        background-size:100%;
+    }
+
+    .bairesBackgroundGastronomia h1{
+        font-size: 30px;
+        height:50px;
+        line-height: 36px;
+        text-align: center;
+        font-family: Raleway;
+        color: #795062;
+    }
+
+    .bairesBackgroundMusica{
+        width: 100%;
+        height:auto;
+        background-image: url(http://drive.google.com/uc?export=view&id=1zWXxd5aGW7OSYrrH5Zy_F9iDtXG44FUc);
+        background-repeat: no-repeat;
+        background-position:stretch;
+        background-size:100%;
+    }
+
+    .bairesBackgroundMusica h1{
+        font-size: 30px;
+        height:50px;
+        line-height: 36px;
+        text-align: center;
+        font-family: Raleway;
+        color: #795062;
+    }
+
+/* ---------------------------------------------------------Q&A------------------------------------------------------------------- */
+    .qa{
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+
+    .pregunta{
+        background-color: #FFF3D4;
+        color: #795062;
+        line-height: 30px;
+        font-family: Raleway;
+        font-size: 18px;
+        border-radius: 5px;
+
+    }
+
+    .respuesta{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        color: #6C7C95;
+        font-family: Raleway;
+        font-size: 18x;
+
+    }
+
+    /* ----------------------------------------------------------------------FORMQA----------------------------------------------------------- */
+
+
+    .formQA{
+        margin-left: 10px;
+        margin-right:10px;
+        width: 90%;
+        padding-left:0%;
+        align-self: center;
+        justify-self: center;
+        font-family: Raleway;
+        font-size: 14px;
+        color: #795062;
+    }
+
+        .formQA input[type=submit] {
+        width: 100px;
+        margin-top: 20px;
+        margin-right:10px;
+        background-color: #6C7C95;
+        color: #FFFFFF;
+    }
+
+    .formQA input[type=reset] {
+        width: 100px;
+        margin-top:10px;
+        background-color: #CCD3DE;
+        color: #FFFFFF;
+    }
+
+    /* -------------------------------------------------------REGISTERFORM---------------------------------------------------------------- */
+
+.registerForm{
+    padding-left: 10px;
+    margin-right: 10px;
+    font-family: Raleway;
+    font-size: 14px;
+    color: #795062;
+}
+
+.registerForm input[type=radio] {
+    height: 15px;
+    width: 15px;
+}
+
+.registerForm input[type=submit] {
+    width: 100px;
+    margin-top: 10px;
+    margin-right:10px;
+    background-color: #6C7C95;
+    color: #FFFFFF;
+}
+
+.registerForm input[type=reset] {
+    width: 100px;
+    margin-top:10px;
+    background-color: #CCD3DE;
+    color: #FFFFFF;
+}
+
+}
