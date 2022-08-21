@@ -54,6 +54,10 @@
     flex-wrap: wrap;
 }
 
+.headerHomepage nav ul :hover {
+   transform: scale(1.05)
+}
+
 .headerHomepage nav ul li {
     display:flex;
     align-items: center;
@@ -65,17 +69,7 @@
     text-decoration:none;
     border-radius: 3px;
     font-family: Raleway;
-    
-}
-
-.headerHomepage nav ul li :hover {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width:120px;
-    height:35px;
-    background-color:#CCD3DE;
-    color:#795062;
+    transition: transform 0.5s
     
 }
 
@@ -347,6 +341,7 @@
     text-decoration:none;
     border-radius: 3px;
     font-family: raleway;
+    transition: transform: 0.5s;
     
 }
 
@@ -521,6 +516,13 @@
     align-self: center;
     
 }
+
+/* zoom */
+.galeria img:hover {
+    transform: scale(1.2); 
+    }
+    
+
 /* ------------------------------------------------------GALERIA------------------------------------------------------------------- */
 
 
