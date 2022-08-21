@@ -341,8 +341,6 @@
     text-decoration:none;
     border-radius: 3px;
     font-family: raleway;
-    transition: transform: 0.5s;
-    
 }
 
 .navSubpages ul li :hover {
