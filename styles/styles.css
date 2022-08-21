@@ -609,7 +609,7 @@
 /* ---------------------------------------------------------Q&A------------------------------------------------------------------- */
 
 
-.pregunta{
+.accordion-header{
     background-color: #FFF3D4;
     color: #795062;
     line-height: 60px;
@@ -639,7 +639,24 @@
 
 }
 
-.respuesta{
+.accordion-button {
+    background-color: #FFF3D4;
+    color: #795062;
+    line-height: 60px;
+    font-family: Raleway;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+.accordion {
+    --bs-accordion-active-color: #6C7C95;
+    --bs-accordion-active-bg:#FFF3D4;
+    --bs-accordion-btn-focus-border-color: #6C7C95;
+
+}
+
+.collapsed {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -647,7 +664,16 @@
     color: #6C7C95;
     font-family: Raleway;
     font-size: 18x;
+}
 
+.accordion-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    color: #6C7C95;
+    font-family: Raleway;
+    font-size: 18x; 
 }
 
 /* ----------------------------------------------------------------------FORMQA----------------------------------------------------------- */
