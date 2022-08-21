@@ -528,7 +528,7 @@
 .bairesBackgroundArquitectura{
     height: 350px;
     width: 100%;
-    background-image: url(../images/Assets/3\ -\ Buenos\ AIres/1.png);
+    background-image: url(../images/Assets/buenos-aires/arquitectura.png);
     background-repeat: no-repeat;
     background-position:stretch;
     background-size:100%;
@@ -548,7 +548,7 @@
 .bairesBackgroundHistoria{
     height: 350px;
     width:100%;
-    background-image: url(http://drive.google.com/uc?export=view&id=1kZaVIVP5oufq0qsisjwWjNZGVF1QjGR9);
+    background-image: url(../images/Assets/buenos-aires/historia.png);
     background-repeat: no-repeat;
     background-position:stretch;
     background-size:100%;
@@ -568,7 +568,7 @@
 .bairesBackgroundGastronomia{
     height: 350px;
     width:100%;
-    background-image: url(http://drive.google.com/uc?export=view&id=1h1amiprKCW1Na5V_CQ4ZRG-G2Pl6Ah3K);
+    background-image: url(../images/Assets/buenos-aires/gastronomia.png);
     background-repeat: no-repeat;
     background-position:stretch;
     background-size:100%;
@@ -588,7 +588,7 @@
 .bairesBackgroundMusica{
     height: 350px;
     width:100%;
-    background-image: url(http://drive.google.com/uc?export=view&id=1zWXxd5aGW7OSYrrH5Zy_F9iDtXG44FUc);
+    background-image: url(../images/Assets/buenos-aires/musica.png);
     background-repeat: no-repeat;
     background-position:stretch;
     background-size:100%;
