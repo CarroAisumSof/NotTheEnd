@@ -826,18 +826,6 @@
     grid-area: whiteSection;
     width: 100%;
     background-color: #FFFFFF;
-    display:grid;
-    grid-template-areas :
-                        ". baires1 ."
-                        ". baires2 ."
-                        ". cemetery1 ."
-                        ". cemetery2 ."
-                        ". caminito1 ."
-                        ". caminito2 ."
-                        ". bar1 ."
-                        ". bar2 .";
-    grid-template-columns: 5% 90% 5%;
-    grid-template-rows:100px;
     }
 
     .headerHomepageHeadline H1{
@@ -894,11 +882,7 @@
         }
 
         .articleButton {
-        margin-top: 30px;
-        display:flex;
-        grid-area: articleButton;
-        justify-content: center;
-        align-content: center;
+        margin-top: 50px;
         }
 
         .articleButton p {
