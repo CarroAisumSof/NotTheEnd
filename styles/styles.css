@@ -489,6 +489,7 @@
 
 
 .formQA{
+    align-items: center;
     padding-bottom: 30px;
     font-family: Raleway;
     font-size: 14px;
@@ -496,8 +497,6 @@
 }
 
 .formQA input{
-    width: 500px;
-    padding-left: 10px;
     height: 40px;
     background-color: #FFF3D4;
     border:none;
@@ -505,8 +504,6 @@
 }
 
 .formQA select{
-    width: 510px;
-    padding-left: 10px;
     height: 40px;
     background-color: #FFF3D4;
     border:none;
@@ -514,9 +511,7 @@
 }
 
 .formQA textarea{
-    width: 500px;
     height: 300px;
-    padding-left: 10px;
     height: 40px;
     background-color: #FFF3D4;
     border:none;
