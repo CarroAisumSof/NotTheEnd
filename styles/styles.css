@@ -525,7 +525,7 @@
 
 /* ------------------------------------------------------BUENOS AIRES------------------------------------------------------------------- */
 .bairesBackgroundArquitectura{
-    height: 350px;
+    height: 300px;
     width: 100%;
     background-image: url(../images/Assets/buenos-aires/arquitectura.png);
     background-repeat: no-repeat;
@@ -534,18 +534,17 @@
 }
 
 .bairesBackgroundArquitectura h1{
-    height:350px;
+    position: absolute;
     font-size: 48px;
     line-height: 50px;
-    padding-top: 150px;
     text-align: center;
     font-family: Raleway;
     font-size: 48;
-    color: #795062;;
+    color: #795062;
 }
 
 .bairesBackgroundHistoria{
-    height: 350px;
+    height: 300px;
     width:100%;
     background-image: url(../images/Assets/buenos-aires/historia.png);
     background-repeat: no-repeat;
@@ -554,10 +553,9 @@
 }
 
 .bairesBackgroundHistoria h1{
-    height:350px;
+    position: absolute;
     font-size: 48px;
     line-height: 50px;
-    padding-top: 150px;
     text-align: center;
     font-family: Raleway;
     font-size: 48;
@@ -565,7 +563,7 @@
 }
 
 .bairesBackgroundGastronomia{
-    height: 350px;
+    height: 300px;
     width:100%;
     background-image: url(../images/Assets/buenos-aires/gastronomia.png);
     background-repeat: no-repeat;
@@ -574,10 +572,9 @@
 }
 
 .bairesBackgroundGastronomia h1{
-    height:350px;
+    position: absolute;
     font-size: 48px;
     line-height: 50px;
-    padding-top: 150px;
     text-align: center;
     font-family: Raleway;
     font-size: 48;
@@ -585,7 +582,7 @@
 }
 
 .bairesBackgroundMusica{
-    height: 350px;
+    height: 300px;
     width:100%;
     background-image: url(../images/Assets/buenos-aires/musica.png);
     background-repeat: no-repeat;
@@ -594,14 +591,13 @@
 }
 
 .bairesBackgroundMusica h1{
-    height:350px;
+    position: absolute;
     font-size: 48px;
     line-height: 50px;
-    padding-top: 150px;
     text-align: center;
     font-family: Raleway;
     font-size: 48;
-    color: #795062;;
+    color: #795062;
 }
 
 /* ------------------------------------------------------BUENOS AIRES------------------------------------------------------------------- */
