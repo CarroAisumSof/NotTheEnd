@@ -1,38 +1,7 @@
-/*---------------------------------------------------------------- HOMEPAGE---------------------------------------------------------- */
-/* ............................................ PAGE LEVEL GRID........................................... */
-#homepage {
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1024px 2050px 160px;
-    grid-template-areas:
-    "homepageHeader"
-    "homepageMain"
-    "footer";
-}
+/* --------------------------------------------------GENERAL ELEMENTS ---------------------------------------*/
 
-#homepageMain {
-    grid-area: homepageMain;
-    justify-self: center;
-    width: 100%
-}
-
-
-/* ............................................ PAGE LEVEL GRID........................................... */
-
-.headerHomepage{
-    background-image: url(../images/buenos-aires.png);
-    background-color: #FFF3D4;
-    height: 1024px;
-    width:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-area: homepageHeader;
-    justify-self: center;
-    align-self: center;
-}
-
-.headerHomepage nav {
+/* -------------------------------------------- Navbar -------------------------------------------------*/
+.navbar {
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -41,30 +10,26 @@
     justify-content: space-between
 }
 
-.headerHomepage nav a img {
+.navbar a img {
     width: 35px;
     height: 35px;
 }
 
-.headerHomepage nav ul {
-    width: 500px;
+.navbar ul {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.headerHomepage nav ul :hover {
-   transform: scale(1.05)
-}
-
-.headerHomepage nav ul li {
+.navbar ul li {
     display:flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     width:120px;
     height:35px;
+    margin-left: 5px;
     background-color:#795062;
     text-decoration:none;
     border-radius: 3px;
@@ -72,11 +37,81 @@
     transition: transform 0.5s;
 }
 
-.headerHomepage nav ul li a{
+.navbar ul li a{
     text-decoration: none;
     color:#CCD3DE;
+    transition: 0.6s color;
 }
 
+.navbar ul li a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+            @media screen and (max-width:991px) {
+
+                .navbar ul {
+                    display: flex;
+                    align-items: start;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+
+                .navbar ul li {
+                    background-color: #795062;
+                    width: 100%;
+                    padding-left: 10%;
+                    justify-content: left;
+                    margin-top: 5px;
+                    
+                }
+                
+                .navbar ul li a{
+                    text-decoration: none;
+                    justify-items: start;
+                    
+                }
+            }
+
+/* --------------------------------------------------------------Footer------------------------------------------------------------ */
+
+.footerContainer {
+    background-color: #795062;
+    margin-bottom: 0%;
+}
+.footerContainer footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footerContainer footer ul li a {
+    margin-left: 10px;
+    color: #CCD3DE !important;
+}
+
+.footerContainer footer ul li a:hover{
+    color: #6C7C95 !important;
+}
+
+
+/* -----------------------HOMEPAGE---------------------------------------------------------------------------------------- */
+
+.headerHomepage{
+    background-image: url(../images/buenos-aires.png);
+    background-color: #FFF3D4;
+    height: 1024px;
+    width:100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: homepageHeader;
+    justify-self: center;
+    align-self: center;
+}
+
+/* ----------------------------------Homepage Headline -------------------------------------*/
 .headerHomepageHeadline{
     display:flex;
     align-items: center;
@@ -112,6 +147,26 @@
     text-align: center;
 }
 
+        @media screen and (max-width:767px) {
+            .headerHomepage{
+                height: 600px;
+                width:100%;
+            }
+            .headerHomepageHeadline H1{
+                font-size: 100px;
+                line-height: 110px;
+                color:#795062;
+                font-family: Corben;
+                text-align: center;
+            }
+            .headerHomepageHeadline H2{
+                padding-top: 30px;
+                font-size: 40px;
+                line-height: 50px;
+                letter-spacing: 10px;
+        }
+    }
+
 /* ---------------------------------------------Yellow background ------------------------------------------------------------------*/
 
 .yellowBackground{
@@ -142,80 +197,34 @@
 }
 
 .yellowBackground h3 span{
-    width: 700px;
+    width: 100%;
     font-family: Raleway;
     font-size: 48px;
     text-align: center;
     color:#6C7C95;
 }
 
+            @media screen and (max-width:767px) {
+                .yellowBackground H3 {
+                    width: 100%;
+                    font-size: 35px;
+                }
+
+                .yellowBackground h3 span{
+                    width: 100%;
+                    font-size: 35px;
+                    color:#6C7C95;
+                }
+            }
+
 /* ------------------------------------------------------White background ------------------------------------------------------------------*/
 .whiteSection {
-    grid-area: whiteSection;
     justify-self: center;
     align-self: center;
     width: 100%;
     background-color: #FFFFFF;
-    display:grid;
-    grid-template-areas :
-    ". baires1 . baires2 ."
-    ". cemetery2 . cemetery1 ."
-    ". caminito1 . caminito2 ."
-    ". bar2 . bar1 .";
-    grid-template-columns: 200px 1fr 30px 1fr 200px;
-    grid-template-rows:350px 350px 350px 350px;
 }
 
-#baires1 {
-    grid-area: baires1;
-    align-self: center;
-    justify-self: center;
-}
-
-#baires2 {
-    grid-area: baires2;
-    align-self: center;
-    justify-self: center;
-}
-
-#cemetery1 {
-    grid-area: cemetery1;
-    align-self: center;
-    justify-self: center;
-}
-
-#cemetery2 {
-    grid-area: cemetery2;
-    align-self: center;
-    justify-self: center;
-}
-
-#caminito1 {
-    grid-area: caminito1;
-    align-self: center;
-    justify-self: center;
-}
-
-#caminito2 {
-    grid-area: caminito2;
-    align-self: center;
-    justify-self: center;
-}
-
-
-#bar1 {
-    grid-area: bar1;
-    align-self: center;
-    justify-self: center;
-}
-
-#bar2 {
-    grid-area: bar2;
-    align-self: center;
-    justify-self: center;
-}
-
-/* ............................................ WHITE SECTION GRID........................................... */
 
 .whiteSection article img{
     margin-top: 20px;
@@ -228,229 +237,39 @@
     width:250px;
 }
 
-.whiteSection article p{
-    width: 450px;
+.whiteSection article div h3{
     font-family: Raleway;
     font-size: 24px;
     color: #6C7C95;
     text-align:center;
 }
 
-.articleButton {
-    display:flex;
-    grid-area: articleButton;
-    justify-content: center;
-    align-content: center;
-}
 
-.articleButton p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 40px;
+
+.btn-secondary {
     background-color: #6C7C95;
-    border-radius: 5px;
     font-family: Raleway;
-    font-size: 24px;
-    text-align:center;
-}
-
-.articleButton p :hover{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 40px;
-    background-color: #CCD3DE;
-    color: #6C7C95;
     border-radius: 5px;
-    font-family: Raleway;
-    font-size: 24px;
-    text-align:center;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.articleButton p a {
-    color: #CCD3DE;
-    text-decoration: none;
-
-}
-
-.articleButton p a :hover{
-    text-decoration: none;
-
-}
-
-/* ............................................ WHITE SECTION GRID........................................... */
 /* ----------------------------------------------------------------SUBPAGES ------------------------------------------------------------*/
-.genLayout {
-    width: 100%;
-    display:grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 2fr 6fr 1fr;
-    grid-template-areas:
-    "headerSubpages headerSubpages headerSubpages"
-    ". main ."
-    "footer footer footer";
-}
 
-.mainSubpages {
-    width: 100%;
-    grid-area: main;
-    
-}
-
-
-/* ------------------------------------------------------------- Navigation ------------------------------------------------------------*/
-
-
-.navSubpages {
-    background-color: #FFF3D4;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-area: navSupbages;
-}
-
-.navSubpages a img {
-    width: 35px;
-    height: 35px;
-}
-
-.navSubpages ul {
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.navSubpages ul li {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width:120px;
-    height:35px;
-    background-color:#795062;
-    text-decoration:none;
-    border-radius: 3px;
-    font-family: raleway;
-}
-
-.navSubpages ul li :hover {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width:120px;
-    height:35px;
-    background-color:#b38298;
-    color:#CCD3DE;
-    border-radius: 3px;
-    
-}
-
-.navSubpages ul li a{
-    text-decoration: none;
-    color:#CCD3DE;
-}
-
-/* ------------------------------------------------------------- Navigation ------------------------------------------------------------*/
-
-/* --------------------------------------------------------------FOOTER------------------------------------------------------------ */
-
-.footerNav {
-    padding-bottom: 100px;
-    background-color: #795062;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-area: footer;
-}
-
-.footerNav a img {
-    width: 35px;
-    height: 35px;
-}
-
-.footerNav ul {
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footerNav ul li {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width:120px;
-    height:35px;
-    background-color:#CCD3DE;
-    text-decoration:none;
-    border-radius: 3px;
-    font-family: raleway;
-    
-}
-
-.footerNav ul li :hover {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width:120px;
-    height:35px;
-    background-color:#d7dfeb;
-    color:#795062;
-    border-radius: 3px;
-    
-}
-
-.footerNav ul li a{
-    text-decoration: none;
-    color:#795062;
-}
-/* --------------------------------------------------------------FOOTER------------------------------------------------------------ */
 
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
-
-.headerSubpages{
-    height: 430px;
+.mastheadSubpages {
     background-color: #6C7C95;
-    grid-area: headerSubpages;
+    align-items: flex-end;
 }
 
 .mastheadSubpages h1{
+    align-self: bottom;
     font-family: Raleway;
     font-size: 48px;
     color: #FFF3D4;
-    grid-area: headerHeadline
 }
-
-.mastheadSubpages img {
-    grid-area:headerImage;
-}
-
-.mastheadSubpages {
-    display:grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 250px 50px 30px;
-    grid-template-areas: 
-    "headerImage ."
-    "headerImage headerHeadline"
-    "headerImage ."
-    ;
-
-}
-
 
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
 
@@ -460,10 +279,6 @@
     font-family: Raleway;
     font-size: 24px;
     color: #795062;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
     line-height: 1,5;
 }
 
@@ -477,10 +292,6 @@
 .winePCenterAlign{
     font-family: Raleway;
     font-size: 24px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
     line-height: 1,5;
     text-align: center;
     text-decoration: none;
@@ -493,6 +304,10 @@
 .winePCenterAlign p a{
     text-decoration:none;
     color: #6C7C95;
+}
+
+.winePCenterAlign p a:hover{
+    color: #CCD3DE;
 }
 
 /* ------------------------------------------------------GALERIA------------------------------------------------------------------- */
@@ -616,11 +431,13 @@
 }
 
 .pregunta{
-    padding-left: 20px;
+
 
 }
 
 .pregunta{
+    padding-left: 20px;
+    margin-bottom: 10px;
     background-color: #FFF3D4;
     color: #795062;
     line-height: 60px;
@@ -636,9 +453,10 @@
 }
 
 .accordion-button {
+    margin-bottom: 10px;
     background-color: #FFF3D4;
     color: #795062;
-    line-height: 60px;
+    line-height: 50px;
     font-family: Raleway;
     font-size: 20px;
     border-radius: 5px;
@@ -677,7 +495,6 @@
 
 .formQA{
     padding-bottom: 30px;
-    padding-left: 50px;
     font-family: Raleway;
     font-size: 14px;
     color: #795062;
@@ -687,7 +504,6 @@
     width: 500px;
     padding-left: 10px;
     height: 40px;
-    margin-top: 10px;
     background-color: #FFF3D4;
     border:none;
     border-radius:5px;
@@ -697,7 +513,6 @@
     width: 510px;
     padding-left: 10px;
     height: 40px;
-    margin-top: 10px;
     background-color: #FFF3D4;
     border:none;
     border-radius:5px;
@@ -708,7 +523,6 @@
     height: 300px;
     padding-left: 10px;
     height: 40px;
-    margin-top: 10px;
     background-color: #FFF3D4;
     border:none;
     border-radius:5px;
@@ -716,7 +530,6 @@
 
 .formQA label{
     line-height: 30px;
-    padding-top: 10px;
 }
 
 .formQA input[type=submit] {
@@ -725,6 +538,11 @@
     margin-right:10px;
     background-color: #6C7C95;
     color: #FFFFFF;
+    transition: 0.6s background-color;
+}
+
+.formQA input[type=submit]:hover{
+    background-color: #7789a5;
 }
 
 .formQA input[type=reset] {
@@ -732,6 +550,11 @@
     margin-top:20px;
     background-color: #CCD3DE;
     color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.formQA input[type=reset]:hover {
+    background-color: #d8dfeb;
 }
 
 /* -------------------------------------------------------REGISTERFORM---------------------------------------------------------------- */
@@ -807,98 +630,6 @@
 /* --------------------------------------------------400px viewport ----------------------------------------------*/
 
 @media screen and (max-width:400px) {
-    #homepage {
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1000px 1600px 100px;
-        grid-template-areas:
-        "homepageHeader"
-        "homepageMain"
-        "footer";
-    }
-
-    .whiteSection {
-    margin-top: 30px;
-    grid-area: whiteSection;
-    width: 100%;
-    background-color: #FFFFFF;
-    }
-
-    .headerHomepageHeadline H1{
-        font-size: 100px;
-        line-height: 110px;
-        color:#795062;
-        font-family: Corben;
-        text-align: center;
-        }
-        
-        .headerHomepageHeadline H2{
-        padding-top: 15px;
-        font-size: 30px;
-        line-height: 35px;
-        color:#795062;
-        font-family: Ubuntu;
-        letter-spacing: 20px;
-        text-align: center;
-        }
-
-        .yellowBackground h3{
-            width: 280px;
-            font-family: Raleway;
-            font-size: 25px;
-            text-align: center;
-            color:#795062;
-        }
-        
-        .yellowBackground h3 span{
-            width: 280px;
-            font-family: Raleway;
-            font-size: 25px;
-            text-align: center;
-            color:#6C7C95;
-        }
-        
-        .whiteSection article img{
-        border-style: solid;
-        border-width: 5px;
-        border-color: #FFF3D4;
-        border-radius: 10px;
-        height: 100px;
-        width: 100px;
-        align-self: center;
-        justify-self: center;
-        }
-
-        .whiteSection article p{
-        width: 280px;
-        font-family: Raleway;
-        font-size: 18px;
-        color: #6C7C95;
-        text-align:center;
-        }
-
-        .articleButton {
-        margin-top: 50px;
-        }
-
-        .articleButton p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 300px;
-        height: 25px;
-        background-color: #6C7C95;
-        border-radius: 5px;
-        font-family: Raleway;
-        font-size: 20px;
-        text-align:center;
-        }
-
-        .articleButton p a {
-        color: #CCD3DE;
-        text-decoration: none;
-        }
-
 
     .headerSubpages{
         background-color: #FFFFFF;
@@ -938,44 +669,6 @@
         "headerImage"
         ;
     
-    }
-
-    .footerNav {
-        padding-bottom: 50px;
-        background-color: #795062;
-        padding-top: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        grid-area: footer;
-    }
-    
-    .footerNav ul {
-        width: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    .footerNav ul li {
-        display:flex;
-        justify-content: right;
-        flex-wrap: wrap;
-        width:120px;
-        height:35px;
-        background-color:#795062;
-        text-decoration:none;
-        border-radius: 3px;
-        font-family: raleway;
-        
-    }
-    
-    .footerNav ul li a{
-        text-decoration: none;
-        color:#CCD3DE;
     }
 
     .galeria{
@@ -1024,10 +717,6 @@
         font-family: Raleway;
         color: #795062;
         font-size: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
         line-height: 1,5;
         text-align: center;
         text-decoration: none;

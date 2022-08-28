@@ -7,9 +7,9 @@
     <title>Not the end.</title>
     <link rel="shortcut icon" href="./images/ghost.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- CSS only -->
+    <!-------------------------------- Bootstrap CSS --------------------------------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-------------------------------- My CSS --------------------------------------------->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/bootstrap-styles.css">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -49,64 +49,77 @@
     </header>
     <main id="homepageMain">     
 <!--------------------------------------------- yellow background ----------------------------------------------------------------->
-        <section class="yellowBackground">
-            <h3>Este año el festival <span>Not the end.</span> se va a llevar a cabo en La Ciudad de la Furia. <br>           
-                <br>
-                ¡No te pierdas la experiencia de tu post-vida!</h3>
+        <section class="container-fluid yellowBackground">
+            <article row-cols-1>
+                <h3>Este año el festival <span>Not the end.</span> se va a llevar a cabo en La Ciudad de la Furia. <br>           
+                    <br>
+                    ¡No te pierdas la experiencia de tu post-vida!
+                </h3>
+            </article>
         </section>
 <!--------------------------------------------- white background ----------------------------------------------------------------->
-    <div class="container-fluid text-center overflow-hidden">
-        <div class="row justify-content-center gy-6 align-items-center">
-            <div class="col-lg-4 col-md-8 col-sm-12 order-lg-2 order-md-1 order-sm-1" >
-                <img width="50%" height="auto" class="img-fluid img-thumbnail" src="./images/Assets/homepage/Baires.png" alt="Fantasma en una avenida de Buenos Aires">
-            </div>
-            <div class="col-lg-4 col-md-8 col-sm-12 order-lg-1 order-md-2 order-sm-2">
-                <h3 >Explorá Buenos Aires de la mano de nuestros guías locales y conocé los recovecos de la Ciudad. </h3>
-            </div>
-        </div>
-        <div class="row justify-content-center gy-6 align-items-center">
-            <div class="col-lg-4 col-md-8 col-sm-12 order-lg-1 order-md-2 order-sm-2">
-                <img width="50%" height="auto" class="img-thumbnail" src="./images/Assets/homepage/Cementerio.png" alt="Fantasma en un cementerio">
-            </div>
-            <div class="col-lg-4 col-md-8 col-sm-12 order-lg-2 order-md-1 order-sm-1">
-                <h3> Visitá cementerios emblemáticos y conocé a las personalidades que aún están entre nosotros. </h3> 
-            </div>
-        </div>
-        <div class="row justify-content-center gy-6 align-items-center">
-            <div class="col-lg-4 col-md-8 col-sm-12 order-lg-2 order-md-1 order-sm-1">
-                <img width="50%" height="auto" src="./images/Assets/homepage/la-boca.png" alt="Dos fantasmas en Caminito, Buenos Aires">
-            </div>
-            <div class="col-lg-4 col-md-8 col-sm-12 order-lg-1 order-md-2 order-sm-2">
-                <h3 >Conectá con gente nueva para compartir la eternidad (o un fin de semana). </h3>
-            </div>
-        </div>
-        <div class="row justify-content-center gy-6 align-items-center">
-            <div class="col-lg-4 col-md-8 col-sm-12 order-lg-1 order-md-2 order-sm-2">
-                <img width="50%" height="auto" src="./images/Assets/homepage/party.png" alt="Varios fantasmas en un bar">
-            </div>
-            <div class="col-lg-4 col-md-8 col-sm-12 order-lg-2 order-md-1 order-sm-1">
-                <h3 >Disfrutá de la vida nocturna de una de las ciudades más excitantes de Latinoamérica. </h3>
-            </div> 
-        </div>             
-    </div>
-        <div class="row align-items-center justify-content-center articleButton">
-                <div class="col-lg-12 col-md-12 col-ms-12 align-self-center justify-self-center">
-                    <p><a href="./pages/registro.html">No me lo puedo perder</a></p>
+        <section class="container-fluid text-center overflow-hidden whiteSection">
+            <article class="row justify-content-center gy-6 align-items-center">
+                <div class="col-lg-4 col-md-8 col-sm-12" >
+                    <img width="50%" height="auto" class="img-fluid img-thumbnail" src="./images/Assets/homepage/Baires.png" alt="Fantasma en una avenida de Buenos Aires">
                 </div>
-        </div>
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <h3 >Explorá Buenos Aires de la mano de nuestros guías locales y conocé los recovecos de la Ciudad. </h3>
+                </div>
+            </article>
+            <article class="row justify-content-center gy-6 align-items-center">
+                <div class="col-lg-4 col-md-8 col-sm-12 order-xs-2 order-lg-1">
+                    <img width="50%" height="auto" class="img-thumbnail" src="./images/Assets/homepage/Cementerio.png" alt="Fantasma en un cementerio">
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <h3> Visitá cementerios emblemáticos y conocé a las personalidades que aún están entre nosotros. </h3> 
+                </div>
+            </article>
+            <article class="row justify-content-center gy-6 align-items-center">
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <img width="50%" height="auto" src="./images/Assets/homepage/la-boca.png" alt="Dos fantasmas en Caminito, Buenos Aires">
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <h3 >Conectá con gente nueva para compartir la eternidad (o un fin de semana). </h3>
+                </div>
+            </article>
+            <article class="row justify-content-center gy-6 align-items-center">
+                <div class="col-lg-4 col-md-8 col-sm-12 order-xs-2 order-lg-1">
+                    <img width="50%" height="auto" src="./images/Assets/homepage/party.png" alt="Varios fantasmas en un bar">
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <h3 >Disfrutá de la vida nocturna de una de las ciudades más excitantes de Latinoamérica. </h3>
+                </div> 
+            </article>             
+        </section>
+        <section class="row">
+                <article class="col text-center">
+                    <a href="./pages/registro.html"><button type="button" class="btn btn-secondary">No me lo puedo perder</button></a>
+                </article>
+        </section>
     </main>
  <!--------------------------------------------- footer ----------------------------------------------------------------->
-    <footer class="footer">
-        <nav class="footerNav">
-            <a href="./index.html"><img src="./images/ghost-blue.png"></a>
-            <ul>
-                <li><a href="./pages/not-the-end.html">Not the end</a></li>
-                <li><a href="./pages/buenos-aires.html">Buenos Aires</a></li>
-                <li><a href="./pages/questions.html">Q&A</a></li>
-                <li><a href="./pages/registro.html">Registrarme</li></a>
-            </ul>
-        </nav>
-    </footer>
+    <div class="container-fluid footerContainer">
+        <footer class="row row-cols-3">
+            <div class="col-1">
+                <a href="./index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <img src="./images/ghost-blue.png" width="40px" height="40px">
+                </a>
+            </div>      
+            <div class="col-11 overflow-hidden">
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.html" class="footer-nav-link nav-link p-0 text-muted">Not the end.</a></li>
+                <li class="nav-item mb-2"><a href="./pages/buenos-aires.html" class="footer-nav-link nav-link p-0 text-muted">Buenos Aires.</a></li>
+                <li class="nav-item mb-2"><a href="./pages/questions.html" class="footer-nav-link nav-link p-0 text-muted">FAQs.</a></li>
+                <li class="nav-item mb-2"><a href="./pages/registro.html" class="footer-nav-link nav-link p-0 text-muted">Registro.</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+      
+      
+<!--------------------------------------------- JS ----------------------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 </html>
