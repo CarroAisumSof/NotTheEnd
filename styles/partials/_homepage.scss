@@ -1,0 +1,155 @@
+.headerHomepage{
+    background-image: url(../images/buenos-aires.png);
+    background-color: #FFF3D4;
+    height: 1024px;
+    width:100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: homepageHeader;
+    justify-self: center;
+    align-self: center;
+}
+
+.headerHomepageHeadline{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: Corben;
+    src: url(../styles/fonts/Corben-Regular.ttf);
+}
+
+.headerHomepageHeadline H1{
+    font-size: 200px;
+    line-height: 230px;
+    color:#795062;
+    font-family: Corben;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../styles/fonts/Ubuntu-Regular.ttf);
+}
+
+.headerHomepageHeadline H2{
+    padding-top: 20px;
+    font-size: 50px;
+    line-height: 60px;
+    color:#795062;
+    font-family: Ubuntu;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+        @media screen and (max-width:767px) {
+            .headerHomepage{
+                height: 600px;
+                width:100%;
+            }
+            .headerHomepageHeadline H1{
+                font-size: 100px;
+                line-height: 110px;
+                color:#795062;
+                font-family: Corben;
+                text-align: center;
+            }
+            .headerHomepageHeadline H2{
+                padding-top: 30px;
+                font-size: 40px;
+                line-height: 50px;
+                letter-spacing: 10px;
+        }
+    }
+
+/* ---------------------------------------------Yellow background ------------------------------------------------------------------*/
+
+.yellowBackground{
+    height: 500px;
+    background-image: url(../images/Diseño\ sin\ título.png);
+    background-position: right;
+    background-color: #FFF3D4;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    grid-area: yellowBackground;
+
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../styles/fonts/Raleway-Bold.ttf);
+}
+
+.yellowBackground h3{
+    width: 700px;
+    font-family: Raleway;
+    font-size: 48px;
+    text-align: center;
+    color:#795062;
+}
+
+.yellowBackground h3 span{
+    width: 100%;
+    font-family: Raleway;
+    font-size: 48px;
+    text-align: center;
+    color:#6C7C95;
+}
+
+            @media screen and (max-width:767px) {
+                .yellowBackground H3 {
+                    width: 100%;
+                    font-size: 35px;
+                }
+
+                .yellowBackground h3 span{
+                    width: 100%;
+                    font-size: 35px;
+                    color:#6C7C95;
+                }
+            }
+
+/* ------------------------------------------------------White background ------------------------------------------------------------------*/
+.whiteSection {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+.whiteSection article img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFF3D4;
+    border-radius: 10px;
+    height: 250px;
+    width:250px;
+}
+
+.whiteSection article div h3{
+    font-family: Raleway;
+    font-size: 24px;
+    color: #6C7C95;
+    text-align:center;
+}
+
+
+
+.btn-secondary {
+    background-color: #6C7C95;
+    font-family: Raleway;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

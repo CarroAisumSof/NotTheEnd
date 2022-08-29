@@ -1,884 +1,624 @@
-/* --------------------------------------------------GENERAL ELEMENTS ---------------------------------------*/
-
-/* -------------------------------------------- Navbar -------------------------------------------------*/
-.navbar {
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
+@charset "UTF-8";
+.registerForm {
+  padding-left: 200px;
+  font-family: Raleway;
+  font-size: 14px;
+  color: #795062;
 }
 
-.navbar a img {
-    width: 35px;
-    height: 35px;
+.registerForm input {
+  width: 800px;
+  padding-left: 10px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: #FFF3D4;
+  border: none;
+  border-radius: 5px;
 }
 
-.navbar ul {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.registerForm select {
+  width: 810px;
+  padding-left: 10px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: #FFF3D4;
+  border: none;
+  border-radius: 5px;
 }
 
-.navbar ul li {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width:120px;
-    height:35px;
-    margin-left: 5px;
-    background-color:#795062;
-    text-decoration:none;
-    border-radius: 3px;
-    font-family: Raleway;
-    transition: transform 0.5s;
+.registerForm textarea {
+  width: 800px;
+  height: 300px;
+  padding-left: 10px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #FFF3D4;
+  border: none;
+  border-radius: 5px;
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color:#CCD3DE;
-    transition: 0.6s color;
+.registerForm label {
+  line-height: 30px;
 }
 
-.navbar ul li a:hover{
-    text-decoration: none;
-    color:white;
+.registerForm p {
+  color: #6C7C95;
+  font-size: 10px;
 }
 
+.registerForm input[type=radio] {
+  height: 10px;
+  width: 10px;
+}
 
+.registerForm input[type=submit] {
+  width: 200px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #6C7C95;
+  color: #FFFFFF;
+}
 
-            @media screen and (max-width:991px) {
-
-                .navbar ul {
-                    display: flex;
-                    align-items: start;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                }
-
-                .navbar ul li {
-                    background-color: #795062;
-                    width: 100%;
-                    padding-left: 10%;
-                    justify-content: left;
-                    margin-top: 5px;
-                    
-                }
-                
-                .navbar ul li a{
-                    text-decoration: none;
-                    justify-items: start;
-                    
-                }
-            }
-
-/* --------------------------------------------------------------Footer------------------------------------------------------------ */
+.registerForm input[type=reset] {
+  width: 200px;
+  margin-top: 20px;
+  background-color: #CCD3DE;
+  color: #FFFFFF;
+}
 
 .footerContainer {
-    background-color: #795062;
-    margin-bottom: 0%;
+  background-color: #795062;
+  margin-bottom: 0%;
 }
+
 .footerContainer footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footerContainer footer ul li a {
-    margin-left: 10px;
-    color: #CCD3DE !important;
+  margin-left: 10px;
+  color: #CCD3DE !important;
 }
 
-.footerContainer footer ul li a:hover{
-    color: #6C7C95 !important;
+.footerContainer footer ul li a:hover {
+  color: #6C7C95 !important;
 }
 
-
-/* -----------------------HOMEPAGE---------------------------------------------------------------------------------------- */
-
-.headerHomepage{
-    background-image: url(../images/buenos-aires.png);
-    background-color: #FFF3D4;
-    height: 1024px;
-    width:100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-area: homepageHeader;
-    justify-self: center;
-    align-self: center;
+.navbar {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* ----------------------------------Homepage Headline -------------------------------------*/
-.headerHomepageHeadline{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.navbar a img {
+  width: 35px;
+  height: 35px;
 }
 
-@font-face {
-    font-family: Corben;
-    src: url(../styles/fonts/Corben-Regular.ttf);
+.navbar ul {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.headerHomepageHeadline H1{
-    font-size: 200px;
-    line-height: 230px;
-    color:#795062;
-    font-family: Corben;
-    text-align: center;
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 120px;
+  height: 35px;
+  margin-left: 5px;
+  background-color: #795062;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Raleway;
+  transition: transform 0.5s;
 }
 
-@font-face {
-    font-family: Ubuntu;
-    src: url(../styles/fonts/Ubuntu-Regular.ttf);
+.navbar ul li a {
+  text-decoration: none;
+  color: #CCD3DE;
+  transition: 0.6s color;
 }
 
-.headerHomepageHeadline H2{
-    padding-top: 20px;
-    font-size: 50px;
-    line-height: 60px;
-    color:#795062;
-    font-family: Ubuntu;
-    letter-spacing: 20px;
-    text-align: center;
+.navbar ul li a:hover {
+  text-decoration: none;
+  color: white;
 }
 
-        @media screen and (max-width:767px) {
-            .headerHomepage{
-                height: 600px;
-                width:100%;
-            }
-            .headerHomepageHeadline H1{
-                font-size: 100px;
-                line-height: 110px;
-                color:#795062;
-                font-family: Corben;
-                text-align: center;
-            }
-            .headerHomepageHeadline H2{
-                padding-top: 30px;
-                font-size: 40px;
-                line-height: 50px;
-                letter-spacing: 10px;
-        }
-    }
-
-/* ---------------------------------------------Yellow background ------------------------------------------------------------------*/
-
-.yellowBackground{
-    height: 500px;
-    background-image: url(../images/Diseño\ sin\ título.png);
-    background-position: right;
-    background-color: #FFF3D4;
-    background-repeat: no-repeat;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-    grid-area: yellowBackground;
-
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../styles/fonts/Raleway-Bold.ttf);
-}
-
-.yellowBackground h3{
-    width: 700px;
-    font-family: Raleway;
-    font-size: 48px;
-    text-align: center;
-    color:#795062;
-}
-
-.yellowBackground h3 span{
+@media screen and (max-width: 991px) {
+  .navbar ul {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .navbar ul li {
+    background-color: #795062;
     width: 100%;
-    font-family: Raleway;
-    font-size: 48px;
-    text-align: center;
-    color:#6C7C95;
+    padding-left: 10%;
+    justify-content: left;
+    margin-top: 5px;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    justify-items: start;
+  }
+}
+.headerHomepage {
+  background-image: url(../images/buenos-aires.png);
+  background-color: #FFF3D4;
+  height: 1024px;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: homepageHeader;
+  justify-self: center;
+  align-self: center;
 }
 
-            @media screen and (max-width:767px) {
-                .yellowBackground H3 {
-                    width: 100%;
-                    font-size: 35px;
-                }
+.headerHomepageHeadline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-                .yellowBackground h3 span{
-                    width: 100%;
-                    font-size: 35px;
-                    color:#6C7C95;
-                }
-            }
+@font-face {
+  font-family: Corben;
+  src: url(../styles/fonts/Corben-Regular.ttf);
+}
+.headerHomepageHeadline H1 {
+  font-size: 200px;
+  line-height: 230px;
+  color: #795062;
+  font-family: Corben;
+  text-align: center;
+}
 
+@font-face {
+  font-family: Ubuntu;
+  src: url(../styles/fonts/Ubuntu-Regular.ttf);
+}
+.headerHomepageHeadline H2 {
+  padding-top: 20px;
+  font-size: 50px;
+  line-height: 60px;
+  color: #795062;
+  font-family: Ubuntu;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .headerHomepage {
+    height: 600px;
+    width: 100%;
+  }
+  .headerHomepageHeadline H1 {
+    font-size: 100px;
+    line-height: 110px;
+    color: #795062;
+    font-family: Corben;
+    text-align: center;
+  }
+  .headerHomepageHeadline H2 {
+    padding-top: 30px;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 10px;
+  }
+}
+/* ---------------------------------------------Yellow background ------------------------------------------------------------------*/
+.yellowBackground {
+  height: 500px;
+  background-image: url(../images/Diseño\ sin\ título.png);
+  background-position: right;
+  background-color: #FFF3D4;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: yellowBackground;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../styles/fonts/Raleway-Bold.ttf);
+}
+.yellowBackground h3 {
+  width: 700px;
+  font-family: Raleway;
+  font-size: 48px;
+  text-align: center;
+  color: #795062;
+}
+
+.yellowBackground h3 span {
+  width: 100%;
+  font-family: Raleway;
+  font-size: 48px;
+  text-align: center;
+  color: #6C7C95;
+}
+
+@media screen and (max-width: 767px) {
+  .yellowBackground H3 {
+    width: 100%;
+    font-size: 35px;
+  }
+  .yellowBackground h3 span {
+    width: 100%;
+    font-size: 35px;
+    color: #6C7C95;
+  }
+}
 /* ------------------------------------------------------White background ------------------------------------------------------------------*/
 .whiteSection {
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    background-color: #FFFFFF;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 
-
-.whiteSection article img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #FFF3D4;
-    border-radius: 10px;
-    height: 250px;
-    width:250px;
+.whiteSection article img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FFF3D4;
+  border-radius: 10px;
+  height: 250px;
+  width: 250px;
 }
 
-.whiteSection article div h3{
-    font-family: Raleway;
-    font-size: 24px;
-    color: #6C7C95;
-    text-align:center;
+.whiteSection article div h3 {
+  font-family: Raleway;
+  font-size: 24px;
+  color: #6C7C95;
+  text-align: center;
 }
-
-
 
 .btn-secondary {
-    background-color: #6C7C95;
-    font-family: Raleway;
-    border-radius: 5px;
-    justify-self: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  background-color: #6C7C95;
+  font-family: Raleway;
+  border-radius: 5px;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-
-/* ----------------------------------------------------------------SUBPAGES ------------------------------------------------------------*/
-
 
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
 .mastheadSubpages {
-    background-color: #6C7C95;
-    align-items: flex-end;
+  background-color: #6C7C95;
+  align-items: flex-end;
 }
 
-.mastheadSubpages h1{
-    align-self: bottom;
-    font-family: Raleway;
-    font-size: 48px;
-    color: #FFF3D4;
+.mastheadSubpages h1 {
+  align-self: bottom;
+  font-family: Raleway;
+  font-size: 48px;
+  color: #FFF3D4;
 }
 
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
-
 /* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
-
-.winePLeftAlign{
-    font-family: Raleway;
-    font-size: 24px;
-    color: #795062;
-    line-height: 1,5;
+.winePLeftAlign {
+  font-family: Raleway;
+  font-size: 24px;
+  color: #795062;
+  line-height: 1, 5;
 }
 
-.blueH2{
-    padding-left: 50px;
-    font-family: raleway;
-    font-size: 48;
-    color: #6C7C95;
+.blueH2 {
+  padding-left: 50px;
+  font-family: raleway;
+  font-size: 48;
+  color: #6C7C95;
 }
 
-.winePCenterAlign{
-    font-family: Raleway;
-    font-size: 24px;
-    line-height: 1,5;
-    text-align: center;
-    text-decoration: none;
+.winePCenterAlign {
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 1, 5;
+  text-align: center;
+  text-decoration: none;
 }
 
-.winePCenterAlign p{
-    color: #795062;
+.winePCenterAlign p {
+  color: #795062;
 }
 
-.winePCenterAlign p a{
-    text-decoration:none;
-    color: #6C7C95;
+.winePCenterAlign p a {
+  text-decoration: none;
+  color: #6C7C95;
 }
 
-.winePCenterAlign p a:hover{
-    color: #CCD3DE;
+.winePCenterAlign p a:hover {
+  color: #CCD3DE;
 }
 
-/* ------------------------------------------------------GALERIA------------------------------------------------------------------- */
-
-.galeria{
-    padding-left: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
+.winePLeftAlign {
+  font-family: Raleway;
+  font-size: 20px;
+  color: #795062;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1, 5;
+  text-align: center;
 }
 
-.galeria img{
-    margin-left: 20px;
-    margin-top: 20px;
-    transition: transform 0.5s;
-    justify-self: center;
-    align-self: center;
-    
+.blueH2 {
+  padding-left: 50px;
+  font-family: raleway;
+  font-size: 48;
+  color: #6C7C95;
+}
+
+.winePCenterAlign {
+  font-family: Raleway;
+  color: #795062;
+  font-size: 20px;
+  line-height: 1, 5;
+  text-align: center;
+  text-decoration: none;
+}
+
+.winePCenterAlign p {
+  color: #795062;
+}
+
+.winePCenterAlign p a {
+  text-decoration: none;
+  color: #6C7C95;
+}
+
+.galeria {
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.galeria img {
+  margin-left: 20px;
+  margin-top: 20px;
+  transition: transform 0.5s;
+  justify-self: center;
+  align-self: center;
 }
 
 /* zoom */
 .galeria img:hover {
-    transform: scale(1.2); 
-    }
-    
-
-/* ------------------------------------------------------GALERIA------------------------------------------------------------------- */
-
-
-/* ------------------------------------------------------BUENOS AIRES------------------------------------------------------------------- */
-.bairesBackgroundArquitectura{
-    height: 300px;
-    width: 100%;
-    background-image: url(../images/Assets/buenos-aires/arquitectura.png);
-    background-repeat: no-repeat;
-    background-position:stretch;
-    background-size:100%;
+  transform: scale(1.2);
 }
 
-.bairesBackgroundArquitectura h1{
-    position: absolute;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 48;
-    color: #795062;
+.bairesBackgroundArquitectura {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/Assets/buenos-aires/arquitectura.png);
+  background-repeat: no-repeat;
+  background-position: stretch;
+  background-size: 100%;
 }
 
-.bairesBackgroundHistoria{
-    height: 300px;
-    width:100%;
-    background-image: url(../images/Assets/buenos-aires/historia.png);
-    background-repeat: no-repeat;
-    background-position:stretch;
-    background-size:100%;
+.bairesBackgroundArquitectura h1 {
+  position: absolute;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 48;
+  color: #795062;
 }
 
-.bairesBackgroundHistoria h1{
-    position: absolute;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 48;
-    color: #795062;;
+.bairesBackgroundHistoria {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/Assets/buenos-aires/historia.png);
+  background-repeat: no-repeat;
+  background-position: stretch;
+  background-size: 100%;
 }
 
-.bairesBackgroundGastronomia{
-    height: 300px;
-    width:100%;
-    background-image: url(../images/Assets/buenos-aires/gastronomia.png);
-    background-repeat: no-repeat;
-    background-position:stretch;
-    background-size:100%;
+.bairesBackgroundHistoria h1 {
+  position: absolute;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 48;
+  color: #795062;
 }
 
-.bairesBackgroundGastronomia h1{
-    position: absolute;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 48;
-    color: #795062;;
+.bairesBackgroundGastronomia {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/Assets/buenos-aires/gastronomia.png);
+  background-repeat: no-repeat;
+  background-position: stretch;
+  background-size: 100%;
 }
 
-.bairesBackgroundMusica{
-    height: 300px;
-    width:100%;
-    background-image: url(../images/Assets/buenos-aires/musica.png);
-    background-repeat: no-repeat;
-    background-position:stretch;
-    background-size:100%;
+.bairesBackgroundGastronomia h1 {
+  position: absolute;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 48;
+  color: #795062;
 }
 
-.bairesBackgroundMusica h1{
-    position: absolute;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 48;
-    color: #795062;
+.bairesBackgroundMusica {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/Assets/buenos-aires/musica.png);
+  background-repeat: no-repeat;
+  background-position: stretch;
+  background-size: 100%;
 }
 
-/* ------------------------------------------------------BUENOS AIRES------------------------------------------------------------------- */
-
-/* ---------------------------------------------------------Q&A------------------------------------------------------------------- */
-
-
-.accordion-header{
-    background-color: #FFF3D4;
-    color: #795062;
-    line-height: 60px;
-    font-family: Raleway;
-    font-size: 20px;
-    border-radius: 5px;
-
+.bairesBackgroundMusica h1 {
+  position: absolute;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 48;
+  color: #795062;
 }
 
-.pregunta{
-    padding-left: 20px;
-    margin-bottom: 10px;
-    background-color: #FFF3D4;
-    color: #795062;
-    line-height: 60px;
-    font-family: Raleway;
-    font-size: 20px;
-    border-radius: 5px;
-
+.accordion-header {
+  background-color: #FFF3D4;
+  color: #795062;
+  line-height: 60px;
+  font-family: Raleway;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
-.pregunta{
-    padding-left: 20px;
+.pregunta {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  background-color: #FFF3D4;
+  color: #795062;
+  line-height: 60px;
+  font-family: Raleway;
+  font-size: 20px;
+  border-radius: 5px;
+}
 
+.pregunta {
+  padding-left: 20px;
 }
 
 .accordion-button {
-    margin-bottom: 10px;
-    background-color: #FFF3D4;
-    color: #795062;
-    line-height: 50px;
-    font-family: Raleway;
-    font-size: 20px;
-    border-radius: 5px;
-
+  margin-bottom: 10px;
+  background-color: #FFF3D4;
+  color: #795062;
+  line-height: 50px;
+  font-family: Raleway;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
 .accordion {
-    --bs-accordion-active-color: #6C7C95;
-    --bs-accordion-active-bg:#FFF3D4;
-    --bs-accordion-btn-focus-border-color: #6C7C95;
-
+  --bs-accordion-active-color: #6C7C95;
+  --bs-accordion-active-bg:#FFF3D4;
+  --bs-accordion-btn-focus-border-color: #6C7C95;
 }
 
 .collapsed {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    color: #6C7C95;
-    font-family: Raleway;
-    font-size: 18x;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #6C7C95;
+  font-family: Raleway;
+  font-size: 18x;
 }
 
 .accordion-body {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    color: #6C7C95;
-    font-family: Raleway;
-    font-size: 18x; 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #6C7C95;
+  font-family: Raleway;
+  font-size: 18x;
 }
 
-/* ----------------------------------------------------------------------FORMQA----------------------------------------------------------- */
-
-
-.formQA{
-    align-items: center;
-    padding-bottom: 30px;
-    font-family: Raleway;
-    font-size: 14px;
-    color: #795062;
+.qa {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.formQA input{
-    height: 40px;
-    background-color: #FFF3D4;
-    border:none;
-    border-radius:5px;
+.pregunta {
+  background-color: #FFF3D4;
+  color: #795062;
+  line-height: 30px;
+  font-family: Raleway;
+  font-size: 18px;
+  border-radius: 5px;
 }
 
-.formQA select{
-    height: 40px;
-    background-color: #FFF3D4;
-    border:none;
-    border-radius:5px;
+.respuesta {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #6C7C95;
+  font-family: Raleway;
+  font-size: 18x;
 }
 
-.formQA textarea{
-    height: 300px;
-    height: 40px;
-    background-color: #FFF3D4;
-    border:none;
-    border-radius:5px;
+.formQA {
+  align-items: center;
+  padding-bottom: 30px;
+  font-family: Raleway;
+  font-size: 14px;
+  color: #795062;
 }
 
-.formQA label{
-    line-height: 30px;
+.formQA input {
+  height: 40px;
+  background-color: #FFF3D4;
+  border: none;
+  border-radius: 5px;
+}
+
+.formQA select {
+  height: 40px;
+  background-color: #FFF3D4;
+  border: none;
+  border-radius: 5px;
+}
+
+.formQA textarea {
+  height: 300px;
+  height: 40px;
+  background-color: #FFF3D4;
+  border: none;
+  border-radius: 5px;
+}
+
+.formQA label {
+  line-height: 30px;
 }
 
 .formQA input[type=submit] {
-    width: 200px;
-    margin-top: 20px;
-    margin-right:10px;
-    background-color: #6C7C95;
-    color: #FFFFFF;
-    transition: 0.6s background-color;
+  width: 200px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #6C7C95;
+  color: #FFFFFF;
+  transition: 0.6s background-color;
 }
 
-.formQA input[type=submit]:hover{
-    background-color: #7789a5;
+.formQA input[type=submit]:hover {
+  background-color: #7789a5;
 }
 
 .formQA input[type=reset] {
-    width: 200px;
-    margin-top:20px;
-    background-color: #CCD3DE;
-    color: #FFFFFF;
-    transition: 0.6s;
+  width: 200px;
+  margin-top: 20px;
+  background-color: #CCD3DE;
+  color: #FFFFFF;
+  transition: 0.6s;
 }
 
 .formQA input[type=reset]:hover {
-    background-color: #d8dfeb;
-}
-
-/* -------------------------------------------------------REGISTERFORM---------------------------------------------------------------- */
-
-.registerForm{
-    padding-left: 200px;
-    font-family: Raleway;
-    font-size: 14px;
-    color: #795062;
-}
-
-.registerForm input{
-    width: 800px;
-    padding-left: 10px;
-    height: 40px;
-    margin-bottom:10px;
-    background-color: #FFF3D4;
-    border:none;
-    border-radius:5px;
-}
-
-.registerForm select{
-    width: 810px;
-    padding-left: 10px;
-    height: 40px;
-    margin-bottom: 10px;
-    background-color: #FFF3D4;
-    border:none;
-    border-radius:5px;
-}
-
-.registerForm textarea{
-    width: 800px;
-    height: 300px;
-    padding-left: 10px;
-    height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #FFF3D4;
-    border:none;
-    border-radius:5px;
-}
-
-.registerForm label{
-    line-height: 30px;
-}
-
-.registerForm p{
-    color: #6C7C95;
-    font-size: 10px;
-}
-
-.registerForm input[type=radio] {
-    height: 10px;
-    width: 10px;
-}
-
-.registerForm input[type=submit] {
-    width: 200px;
-    margin-top: 20px;
-    margin-right:10px;
-    background-color: #6C7C95;
-    color: #FFFFFF;
-}
-
-.registerForm input[type=reset] {
-    width: 200px;
-    margin-top:20px;
-    background-color: #CCD3DE;
-    color: #FFFFFF;
-}
-
-/* --------------------------------------------------400px viewport ----------------------------------------------*/
-
-@media screen and (max-width:400px) {
-
-    .headerSubpages{
-        background-color: #FFFFFF;
-    }
-    
-    .genLayout{
-        width: 100%;
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 2fr auto 1fr;
-        grid-template-areas:
-        "headerSubpages"
-        "main"
-        "footer ";
-    }
-
-    .mastheadSubpages h1{
-        font-family: Raleway;
-        font-size: 30px;
-        color: #795062;
-        justify-self: center;
-        align-self:center;
-        text-align: left;
-    }
-    
-    .mastheadSubpages img {
-        grid-area:headerImage;
-        width:100%
-    }
-    
-    .mastheadSubpages {
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 100%;
-        grid-template-areas: 
-        "headerHeadline"
-        "headerImage"
-        ;
-    
-    }
-
-    .galeria{
-        padding-left: 0px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr (repeat(8));
-        justify-self: center;
-        align-self: center;
-    
-    }
-    
-    .galeria img{
-        padding-left: 0px;
-        width:80%;
-        margin-top: 20px;
-        transition: transform 0.5s;
-        justify-self: center;
-        align-self: center;
-        padding-left: 0px;
-            
-    }
-
-/* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
-
-    .winePLeftAlign{
-        font-family: Raleway;
-        font-size: 20px;
-        color: #795062;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        line-height: 1,5;
-        text-align: center;
-    }
-
-    .blueH2{
-        padding-left: 50px;
-        font-family: raleway;
-        font-size: 48;
-        color: #6C7C95;
-    }
-
-    .winePCenterAlign{
-        font-family: Raleway;
-        color: #795062;
-        font-size: 20px;
-        line-height: 1,5;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .winePCenterAlign p{
-        color: #795062;
-    }
-
-    .winePCenterAlign p a{
-        text-decoration:none;
-        color: #6C7C95;
-    }
-
-    /* ------------------------------------------------------BUENOS AIRES------------------------------------------------------------------- */
-    .bairesBackgroundArquitectura{
-        width: 100%;
-        height: auto;
-        background-image: url(http://drive.google.com/uc?export=view&id=1C1uxtLj7zJzG4Nex2YDUswn3YZxKvGgx);
-        background-repeat: no-repeat;
-        background-position:stretch;
-        background-size:100%;
-    }
-
-    .bairesBackgroundArquitectura h1{
-        font-size: 30px;
-        height:50px;
-        line-height: 36px;
-        text-align: center;
-        font-family: Raleway;
-        color: #795062;
-    }
-
-    .bairesBackgroundHistoria{
-        width: 100%;
-        height: auto;
-        background-image: url(http://drive.google.com/uc?export=view&id=1kZaVIVP5oufq0qsisjwWjNZGVF1QjGR9);
-        background-repeat: no-repeat;
-        background-position:stretch;
-        background-size:100%;
-    }
-
-    .bairesBackgroundHistoria h1{
-        font-size: 30px;
-        height:50px;
-        line-height: 36px;
-        text-align: center;
-        font-family: Raleway;
-        color: #795062;
-    }
-
-    .bairesBackgroundGastronomia{
-        width: 100%;
-        height: auto;
-        background-image: url(http://drive.google.com/uc?export=view&id=1h1amiprKCW1Na5V_CQ4ZRG-G2Pl6Ah3K);
-        background-repeat: no-repeat;
-        background-position:stretch;
-        background-size:100%;
-    }
-
-    .bairesBackgroundGastronomia h1{
-        font-size: 30px;
-        height:50px;
-        line-height: 36px;
-        text-align: center;
-        font-family: Raleway;
-        color: #795062;
-    }
-
-    .bairesBackgroundMusica{
-        width: 100%;
-        height:auto;
-        background-image: url(http://drive.google.com/uc?export=view&id=1zWXxd5aGW7OSYrrH5Zy_F9iDtXG44FUc);
-        background-repeat: no-repeat;
-        background-position:stretch;
-        background-size:100%;
-    }
-
-    .bairesBackgroundMusica h1{
-        font-size: 30px;
-        height:50px;
-        line-height: 36px;
-        text-align: center;
-        font-family: Raleway;
-        color: #795062;
-    }
-
-/* ---------------------------------------------------------Q&A------------------------------------------------------------------- */
-    .qa{
-        padding-left: 10px;
-        padding-right: 10px;
-    }    
-
-    .pregunta{
-        background-color: #FFF3D4;
-        color: #795062;
-        line-height: 30px;
-        font-family: Raleway;
-        font-size: 18px;
-        border-radius: 5px;
-
-    }
-
-    .respuesta{
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        color: #6C7C95;
-        font-family: Raleway;
-        font-size: 18x;
-
-    }
-
-    /* ----------------------------------------------------------------------FORMQA----------------------------------------------------------- */
-
-
-    .formQA{
-        margin-left: 10px;
-        margin-right:10px;
-        width: 90%;
-        padding-left:0%;
-        align-self: center;
-        justify-self: center;
-        font-family: Raleway;
-        font-size: 14px;
-        color: #795062;
-    }
-
-        .formQA input[type=submit] {
-        width: 100px;
-        margin-top: 20px;
-        margin-right:10px;
-        background-color: #6C7C95;
-        color: #FFFFFF;
-    }
-
-    .formQA input[type=reset] {
-        width: 100px;
-        margin-top:10px;
-        background-color: #CCD3DE;
-        color: #FFFFFF;
-    }
-
-    /* -------------------------------------------------------REGISTERFORM---------------------------------------------------------------- */
-
-.registerForm{
-    padding-left: 10px;
-    margin-right: 10px;
-    font-family: Raleway;
-    font-size: 14px;
-    color: #795062;
-}
-
-.registerForm input[type=radio] {
-    height: 15px;
-    width: 15px;
-}
-
-.registerForm input[type=submit] {
-    width: 100px;
-    margin-top: 10px;
-    margin-right:10px;
-    background-color: #6C7C95;
-    color: #FFFFFF;
-}
-
-.registerForm input[type=reset] {
-    width: 100px;
-    margin-top:10px;
-    background-color: #CCD3DE;
-    color: #FFFFFF;
-}
-
-}
+  background-color: #d8dfeb;
+}/*# sourceMappingURL=styles.css.map */

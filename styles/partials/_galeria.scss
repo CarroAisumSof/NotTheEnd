@@ -1,0 +1,22 @@
+.galeria{
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.galeria img{
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: transform 0.5s;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+/* zoom */
+.galeria img:hover {
+    transform: scale(1.2); 
+    }
+    

@@ -39,9 +39,13 @@
               </div>
             </div>
         </nav>
-        <section class="mastheadSubpages">
-            <img width="600px" height="315px" src="../images/Assets/mastheads/4.png">
-            <h1>Registro.</h1>
+        <section class="mastheadSubpages row">
+            <article class="col-8">
+                <img src="../images/Assets/mastheads/4.png" width="100%">
+            </article>
+            <article class="col-4 Headline">
+                <h1>Registro.</h1>
+            </article>
         </section>
     </header>
     <main class="mainSubpages">
@@ -54,23 +58,23 @@
         <form class="registerForm">
             <label for="nombre">Nombre</label>
             <br />
-            <input id="nombre" type="text" placeholder="Ingresá tu nombre">
+            <input class="form-control" id="nombre" type="text" placeholder="Ingresá tu nombre">
             <br />
             <label for="apellido">Apellido</label>
             <br />
-            <input id="apellido" type="text" placeholder="Ingresa tu apellido">
+            <input class="form-control" id="apellido" type="text" placeholder="Ingresa tu apellido">
             <br />
             <label for="nacionalidad">Nacionalidad</label>
             <br />
-            <input id="Nacionalidad" type="text" placeholder="Ingresa tu nacionalidad">
+            <input class="form-control" id="Nacionalidad" type="text" placeholder="Ingresa tu nacionalidad">
             <br />
             <label for="nacimiento">Fecha de nacimiento</label>
             <br />
-            <input id="nacimiento" type="date">
+            <input class="form-control" id="nacimiento" type="date">
             <br />
             <label for="fallecimiento">Fecha de fallecimiento</label>
             <br />
-            <input id="fallecimiento" type="date"> 
+            <input class="form-control" id="fallecimiento" type="date"> 
             <p>(Esta información, por su carácter sensible, no es requisito para registrarse)</p>
             <br />
             <label>Nivel de corporeidad</label>
@@ -92,9 +96,9 @@
                 <option>Email</option>
             </select>
             <br />
-            <input type="email" placeholder="Ingresá tu email">
+            <input class="form-control" type="email" placeholder="Ingresá tu email">
             <br />
-            <input type="tel" placeholder="Ingresá tu teléfono">
+            <input class="form-control" type="tel" placeholder="Ingresá tu teléfono">
             <br />
             <label for="comentario">¿Tenés algún comentario?</label>
             <br />
@@ -103,8 +107,8 @@
             <input type="radio">
             <span>Acepto que esta información sea enviada a los organizadores del evento.</span>
             <br/>
-            <input type="submit" placeholder="Enviar">
-            <input type="reset" placeholder="Borrar">
+            <input class="form-control" type="submit" placeholder="Enviar">
+            <input class="form-control" type="reset" placeholder="Borrar">
         </form>
     </main>
 <br />
