@@ -312,18 +312,18 @@
 
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
 /* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
-.winePLeftAlign {
-  font-family: Raleway;
-  font-size: 24px;
-  color: #795062;
-  line-height: 1, 5;
-}
-
 .blueH2 {
   padding-left: 50px;
   font-family: raleway;
   font-size: 48;
   color: #6C7C95;
+}
+
+.winePLeftAlign {
+  font-family: Raleway;
+  font-size: 24px;
+  color: #795062;
+  line-height: 1, 5;
 }
 
 .winePCenterAlign {
@@ -357,13 +357,6 @@
   padding-right: 30px;
   line-height: 1, 5;
   text-align: center;
-}
-
-.blueH2 {
-  padding-left: 50px;
-  font-family: raleway;
-  font-size: 48;
-  color: #6C7C95;
 }
 
 .winePCenterAlign {
@@ -480,30 +473,6 @@
   color: #795062;
 }
 
-.accordion-header {
-  background-color: #FFF3D4;
-  color: #795062;
-  line-height: 60px;
-  font-family: Raleway;
-  font-size: 20px;
-  border-radius: 5px;
-}
-
-.pregunta {
-  padding-left: 20px;
-  margin-bottom: 10px;
-  background-color: #FFF3D4;
-  color: #795062;
-  line-height: 60px;
-  font-family: Raleway;
-  font-size: 20px;
-  border-radius: 5px;
-}
-
-.pregunta {
-  padding-left: 20px;
-}
-
 .accordion-button {
   margin-bottom: 10px;
   background-color: #FFF3D4;
@@ -515,9 +484,9 @@
 }
 
 .accordion {
-  --bs-accordion-active-color: #6C7C95;
-  --bs-accordion-active-bg:#FFF3D4;
-  --bs-accordion-btn-focus-border-color: #6C7C95;
+  --bs-accordion-active-color: #795062;
+  --bs-accordion-active-bg: #FFF3D4;
+  --bs-accordion-btn-focus-border-color:#795062;
 }
 
 .collapsed {
@@ -525,7 +494,7 @@
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 25px;
-  color: #6C7C95;
+  color: #795062;
   font-family: Raleway;
   font-size: 18x;
 }
@@ -543,25 +512,6 @@
 .qa {
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.pregunta {
-  background-color: #FFF3D4;
-  color: #795062;
-  line-height: 30px;
-  font-family: Raleway;
-  font-size: 18px;
-  border-radius: 5px;
-}
-
-.respuesta {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  color: #6C7C95;
-  font-family: Raleway;
-  font-size: 18x;
 }
 
 .formQA {

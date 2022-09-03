@@ -1,59 +1,59 @@
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
 .mastheadSubpages {
-    background-color: #6C7C95;
+    background-color: map-get($color, ghost-blue);
     align-items: flex-end;
 }
 
 .mastheadSubpages h1{
     align-self: bottom;
     font-family: Raleway;
-    font-size: 48px;
-    color: #FFF3D4;
+    font-size: map-get($fontSize, large);
+    color: map-get($color, ghost-yellow);
 }
 
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
 
 /* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
+.blueH2{
+    padding-left: 50px;
+    font-family: raleway;
+    font-size: map-get($fontSize, large);
+    color: map-get($color, ghost-blue);
+}
+
 
 .winePLeftAlign{
     font-family: Raleway;
     font-size: 24px;
-    color: #795062;
+    color: map-get($color, ghost-wine);
     line-height: 1,5;
-}
-
-.blueH2{
-    padding-left: 50px;
-    font-family: raleway;
-    font-size: 48;
-    color: #6C7C95;
 }
 
 .winePCenterAlign{
     font-family: Raleway;
-    font-size: 24px;
+    font-size: map-get($fontSize, medium);
     line-height: 1,5;
     text-align: center;
     text-decoration: none;
 }
 
 .winePCenterAlign p{
-    color: #795062;
+    color: map-get($color, ghost-wine);
 }
 
 .winePCenterAlign p a{
     text-decoration:none;
-    color: #6C7C95;
+    color: map-get($color, ghost-blue);
 }
 
 .winePCenterAlign p a:hover{
-    color: #CCD3DE;
+    color: map-get($color, light-blue);
 }
 
 .winePLeftAlign{
     font-family: Raleway;
     font-size: 20px;
-    color: #795062;
+    color: map-get($color, ghost-wine);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -62,16 +62,9 @@
     text-align: center;
 }
 
-.blueH2{
-    padding-left: 50px;
-    font-family: raleway;
-    font-size: 48;
-    color: #6C7C95;
-}
-
 .winePCenterAlign{
     font-family: Raleway;
-    color: #795062;
+    color: map-get($color, ghost-wine);
     font-size: 20px;
     line-height: 1,5;
     text-align: center;
@@ -79,10 +72,10 @@
 }
 
 .winePCenterAlign p{
-    color: #795062;
+    color: map-get($color, ghost-wine);
 }
 
 .winePCenterAlign p a{
     text-decoration:none;
-    color: #6C7C95;
+    color: map-get($color, ghost-blue);
 }
