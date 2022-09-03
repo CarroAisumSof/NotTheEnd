@@ -4,8 +4,5 @@
     color: map-get($color, wine);
     line-height: 1,5;
     text-decoration: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    @include padding(30px,30px,30px,30px)
 }
