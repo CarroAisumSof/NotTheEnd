@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.winePCenterAlign, .winePLeftAlign {
+  font-family: Raleway;
+  font-size: 24px;
+  color: #795062;
+  line-height: 1, 5;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .registerForm {
   padding-left: 200px;
   font-family: Raleway;
@@ -315,66 +327,20 @@
 .blueH2 {
   padding-left: 50px;
   font-family: raleway;
-  font-size: 48;
+  font-size: 48px;
   color: #6C7C95;
 }
 
-.winePLeftAlign {
-  font-family: Raleway;
-  font-size: 24px;
-  color: #795062;
-  line-height: 1, 5;
-}
-
 .winePCenterAlign {
-  font-family: Raleway;
-  font-size: 24px;
-  line-height: 1, 5;
   text-align: center;
-  text-decoration: none;
-}
-
-.winePCenterAlign p {
-  color: #795062;
 }
 
 .winePCenterAlign p a {
-  text-decoration: none;
   color: #6C7C95;
 }
 
 .winePCenterAlign p a:hover {
   color: #CCD3DE;
-}
-
-.winePLeftAlign {
-  font-family: Raleway;
-  font-size: 20px;
-  color: #795062;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  line-height: 1, 5;
-  text-align: center;
-}
-
-.winePCenterAlign {
-  font-family: Raleway;
-  color: #795062;
-  font-size: 20px;
-  line-height: 1, 5;
-  text-align: center;
-  text-decoration: none;
-}
-
-.winePCenterAlign p {
-  color: #795062;
-}
-
-.winePCenterAlign p a {
-  text-decoration: none;
-  color: #6C7C95;
 }
 
 .galeria {
@@ -473,45 +439,30 @@
   color: #795062;
 }
 
-.accordion-button {
-  margin-bottom: 10px;
-  background-color: #FFF3D4;
-  color: #795062;
-  line-height: 50px;
-  font-family: Raleway;
-  font-size: 20px;
-  border-radius: 5px;
-}
-
 .accordion {
   --bs-accordion-active-color: #795062;
   --bs-accordion-active-bg: #FFF3D4;
   --bs-accordion-btn-focus-border-color:#795062;
 }
 
+.accordion-button {
+  background-color: #FFF3D4;
+  color: #795062;
+  font-family: Raleway;
+  font-size: 24px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 .collapsed {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 25px;
   color: #795062;
   font-family: Raleway;
   font-size: 18x;
 }
 
 .accordion-body {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 25px;
   color: #6C7C95;
   font-family: Raleway;
-  font-size: 18x;
-}
-
-.qa {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .formQA {

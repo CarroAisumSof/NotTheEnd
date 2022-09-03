@@ -9,8 +9,9 @@
     background-color: map-get($color, ghost-yellow);
     color: map-get($color , wine);
     font-family: Raleway;
-    font-size: map-get($fontSize, small);
+    font-size: map-get($fontSize, medium);
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .collapsed {

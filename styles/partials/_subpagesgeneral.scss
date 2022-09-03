@@ -23,59 +23,18 @@
 
 
 .winePLeftAlign{
-    font-family: Raleway;
-    font-size: 24px;
-    color: map-get($color, ghost-wine);
-    line-height: 1,5;
+    @extend %mainText; 
 }
 
 .winePCenterAlign{
-    font-family: Raleway;
-    font-size: map-get($fontSize, medium);
-    line-height: 1,5;
+    @extend %mainText;
     text-align: center;
-    text-decoration: none;
-}
-
-.winePCenterAlign p{
-    color: map-get($color, ghost-wine);
 }
 
 .winePCenterAlign p a{
-    text-decoration:none;
     color: map-get($color, ghost-blue);
 }
 
 .winePCenterAlign p a:hover{
     color: map-get($color, light-blue);
-}
-
-.winePLeftAlign{
-    font-family: Raleway;
-    font-size: 20px;
-    color: map-get($color, ghost-wine);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: 1,5;
-    text-align: center;
-}
-
-.winePCenterAlign{
-    font-family: Raleway;
-    color: map-get($color, ghost-wine);
-    font-size: 20px;
-    line-height: 1,5;
-    text-align: center;
-    text-decoration: none;
-}
-
-.winePCenterAlign p{
-    color: map-get($color, ghost-wine);
-}
-
-.winePCenterAlign p a{
-    text-decoration:none;
-    color: map-get($color, ghost-blue);
 }
