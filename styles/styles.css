@@ -4,10 +4,6 @@
   color: #795062;
   line-height: 1, 5;
   text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .registerForm {
@@ -311,6 +307,10 @@
   color: #6C7C95;
 }
 
+.bg-light {
+  background-color: white !important;
+}
+
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
 /* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
 .blueH2 {
@@ -352,80 +352,23 @@
   transform: scale(1.2);
 }
 
-.bairesBackgroundArquitectura {
-  height: 300px;
-  width: 100%;
-  background-image: url(../images/Assets/buenos-aires/arquitectura.png);
-  background-repeat: no-repeat;
-  background-position: stretch;
-  background-size: 100%;
-}
-
-.bairesBackgroundArquitectura h1 {
-  position: absolute;
-  font-size: 48px;
-  line-height: 50px;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 48;
+.baires h3 {
   color: #795062;
+  font-family: raleway;
+}
+.baires p {
+  color: #6C7C95;
 }
 
-.bairesBackgroundHistoria {
-  height: 300px;
-  width: 100%;
-  background-image: url(../images/Assets/buenos-aires/historia.png);
+.card-cover {
   background-repeat: no-repeat;
-  background-position: stretch;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-.bairesBackgroundHistoria h1 {
-  position: absolute;
-  font-size: 48px;
-  line-height: 50px;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 48;
-  color: #795062;
-}
-
-.bairesBackgroundGastronomia {
-  height: 300px;
-  width: 100%;
-  background-image: url(../images/Assets/buenos-aires/gastronomia.png);
-  background-repeat: no-repeat;
-  background-position: stretch;
-  background-size: 100%;
-}
-
-.bairesBackgroundGastronomia h1 {
-  position: absolute;
-  font-size: 48px;
-  line-height: 50px;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 48;
-  color: #795062;
-}
-
-.bairesBackgroundMusica {
-  height: 300px;
-  width: 100%;
-  background-image: url(../images/Assets/buenos-aires/musica.png);
-  background-repeat: no-repeat;
-  background-position: stretch;
-  background-size: 100%;
-}
-
-.bairesBackgroundMusica h1 {
-  position: absolute;
-  font-size: 48px;
-  line-height: 50px;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 48;
-  color: #795062;
+.text-ghost-blue-light {
+  color: #CCD3DE;
+  font-family: raleway;
 }
 
 .accordion {

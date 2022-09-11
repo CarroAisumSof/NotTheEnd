@@ -1,75 +1,20 @@
-.bairesBackgroundArquitectura{
-    height: 300px;
-    width: 100%;
-    background-image: url(../images/Assets/buenos-aires/arquitectura.png);
+.baires {
+    h3 {
+        color: map-get($color, wine);
+        font-family: raleway;
+    }
+    p{
+        color: map-get($color, ghost-blue);
+    }
+}
+
+.card-cover {
     background-repeat: no-repeat;
-    background-position:stretch;
-    background-size:100%;
+    background-position: center;
+    background-size:cover;
 }
 
-.bairesBackgroundArquitectura h1{
-    position: absolute;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 48;
-    color: #795062;
-}
-
-.bairesBackgroundHistoria{
-    height: 300px;
-    width:100%;
-    background-image: url(../images/Assets/buenos-aires/historia.png);
-    background-repeat: no-repeat;
-    background-position:stretch;
-    background-size:100%;
-}
-
-.bairesBackgroundHistoria h1{
-    position: absolute;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 48;
-    color: #795062;;
-}
-
-.bairesBackgroundGastronomia{
-    height: 300px;
-    width:100%;
-    background-image: url(../images/Assets/buenos-aires/gastronomia.png);
-    background-repeat: no-repeat;
-    background-position:stretch;
-    background-size:100%;
-}
-
-.bairesBackgroundGastronomia h1{
-    position: absolute;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 48;
-    color: #795062;;
-}
-
-.bairesBackgroundMusica{
-    height: 300px;
-    width:100%;
-    background-image: url(../images/Assets/buenos-aires/musica.png);
-    background-repeat: no-repeat;
-    background-position:stretch;
-    background-size:100%;
-}
-
-.bairesBackgroundMusica h1{
-    position: absolute;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 48;
-    color: #795062;
+.text-ghost-blue-light {
+    color: map-get($color, light-blue);
+    font-family: raleway;
 }
