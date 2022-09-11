@@ -41,80 +41,83 @@
               </div>
             </div>
         </nav>
-        <div class="p-4 mb-4 bg-light rounded-3 masthead">
-          <div class="container-fluid py-5">
+        <div class="p-4 bg-light rounded-3 masthead">
+          <div class="container-fluid">
             <h1 class="display-5 fw-bold">Registro.</h1>
             <p class="col-md-8 fs-4">No te quedes afuera del festival. Registrate y reservá tu lugar.</p>
           </div>
         </div>
     </header>
     <main class="mainSubpages">
-        <section>
-            <article class="winePCenterAlign">
+        <section class="row align-items-center justify-items-around p-2">
+            <article class="col-12 winePCenterAlign">
                 <p>Dejanos tus datos y te enviaremos toda la info para registrarte. El evento, como todos los años, es de entrada libre y gratuita respetando las consignas del festival.</p>
             </article>
         </section>
         <!-- Formulario -->
-        <form class="registerForm">
-            <label for="nombre">Nombre</label>
-            <br />
-            <input class="form-control" id="nombre" type="text" placeholder="Ingresá tu nombre">
-            <br />
-            <label for="apellido">Apellido</label>
-            <br />
-            <input class="form-control" id="apellido" type="text" placeholder="Ingresa tu apellido">
-            <br />
-            <label for="nacionalidad">Nacionalidad</label>
-            <br />
-            <input class="form-control" id="Nacionalidad" type="text" placeholder="Ingresa tu nacionalidad">
-            <br />
-            <label for="nacimiento">Fecha de nacimiento</label>
-            <br />
-            <input class="form-control" id="nacimiento" type="date">
-            <br />
-            <label for="fallecimiento">Fecha de fallecimiento</label>
-            <br />
-            <input class="form-control" id="fallecimiento" type="date"> 
-            <p>(Esta información, por su carácter sensible, no es requisito para registrarse)</p>
-            <br />
-            <label>Nivel de corporeidad</label>
-            <br />
-            <select>
-                <Option>Nivel 1</Option>
-                <option>Nivel 2</option>
-                <option>Nivel 3</option>
-                <option>Nivel 4</option>
-                <option>Nivel 5</option>
-            </select>
-            <p> Escogé con honestidad. Contamos con recursos para facilitar el disfrute pleno de las actividades para todo tipo de corporeidades.</p>
-            <br />
-            <label>Médoto de contacto</label>
-            <br />
-            <select>
-                <Option>Seleccioná una opción</Option>
-                <option>Teléfono</option>
-                <option>Email</option>
-            </select>
-            <br />
-            <input class="form-control" type="email" placeholder="Ingresá tu email">
-            <br />
-            <input class="form-control" type="tel" placeholder="Ingresá tu teléfono">
-            <br />
-            <label for="comentario">¿Tenés algún comentario?</label>
-            <br />
-            <textarea id="comentario" placeholder="Comentario"></textarea>
-            <br />
-            <input type="radio">
-            <span>Acepto que esta información sea enviada a los organizadores del evento.</span>
-            <br/>
-            <input class="form-control" type="submit" placeholder="Enviar">
-            <input class="form-control" type="reset" placeholder="Borrar">
-        </form>
+        <div class="row justify-items-center">
+          <div class="col-1"></div>  
+          <form class="registerForm col-10">
+              <label for="nombre">Nombre</label>
+              <br />
+              <input class="form-control" id="nombre" type="text" placeholder="Ingresá tu nombre">
+              <br />
+              <label for="apellido">Apellido</label>
+              <br />
+              <input class="form-control" id="apellido" type="text" placeholder="Ingresa tu apellido">
+              <br />
+              <label for="nacionalidad">Nacionalidad</label>
+              <br />
+              <input class="form-control" id="Nacionalidad" type="text" placeholder="Ingresa tu nacionalidad">
+              <br />
+              <label for="nacimiento">Fecha de nacimiento</label>
+              <br />
+              <input class="form-control" id="nacimiento" type="date">
+              <br />
+              <label for="fallecimiento">Fecha de fallecimiento</label>
+              <br />
+              <input class="form-control" id="fallecimiento" type="date"> 
+              <p>(Esta información, por su carácter sensible, no es requisito para registrarse)</p>
+              <br />
+              <label>Nivel de corporeidad</label>
+              <br />
+              <select>
+                  <Option>Nivel 1</Option>
+                  <option>Nivel 2</option>
+                  <option>Nivel 3</option>
+                  <option>Nivel 4</option>
+                  <option>Nivel 5</option>
+              </select>
+              <p> Escogé con honestidad. Contamos con recursos para facilitar el disfrute pleno de las actividades para todo tipo de corporeidades.</p>
+              <br />
+              <label>Médoto de contacto</label>
+              <br />
+              <select>
+                  <Option>Seleccioná una opción</Option>
+                  <option>Teléfono</option>
+                  <option>Email</option>
+              </select>
+              <br />
+              <input class="form-control" type="email" placeholder="Ingresá tu email">
+              <br />
+              <input class="form-control" type="tel" placeholder="Ingresá tu teléfono">
+              <br />
+              <label for="comentario">¿Tenés algún comentario?</label>
+              <br />
+              <textarea id="comentario" placeholder="Comentario"></textarea>
+              <br />
+              <input type="radio">
+              <span>Acepto que esta información sea enviada a los organizadores del evento.</span>
+              <br/>
+              <input class="form-control" type="submit" placeholder="Enviar">
+              <input class="form-control" type="reset" placeholder="Borrar">
+          </form>
+        </div>
     </main>
 <br />
 <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <a href="https://ar.linkedin.com/in/s-carroaisum" class="text-decoration-none"><span class="col-md-4 mb-0 text-muted">&copy; 2022 Sofía Carro Aisum</span></a>
+    <a href="https://ar.linkedin.com/in/s-carroaisum" target="_blank" class="text-decoration-none"><span class="col-md-4 mb-0 text-muted">&copy; 2022 Sofía Carro Aisum</span></a>
     <a href="#" class="link-dark text-decoration-none">
         <img src="../images/up-arrow.png" width="40px" height="40px">
     </a>

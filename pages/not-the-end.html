@@ -41,16 +41,16 @@
               </div>
             </div>
         </nav>
-        <div class="p-4 mb-4 bg-light rounded-3 masthead">
-          <div class="container-fluid py-5">
+        <div class="p-4 bg-light rounded-3 masthead">
+          <div class="container-fluid">
             <h1 class="display-5 fw-bold">Not the end.</h1>
             <p class="col-md-8 fs-4">Conocé la historia de Not the end, el festival post-mortem internacional.</p>
           </div>
         </div>
     </header>
     <main class="mainSubpages">
-        <section>
-            <article class="winePLeftAlign">
+        <section class="row align-items-center justify-items-around p-2">
+          <article class="col-12 winePLeftAlign">
                 <p>Not the end nació en la década de 1980 en Nueva York, organizado por un grupo de antiguos fallecidos que deseaban alivianar la pesada carga del gran afluente de recientes Muertes No Cruzadas (MNC): personas fallecidas que no han podido cruzar al otro lado. </p>
                 <br>
                 <p>La idea era disfrutar de lo que había sido negado en vida: la libertad del goce.</p>
@@ -58,21 +58,45 @@
                 <p>Durante una semana, las calles se colmaron de fantasmas, que recorrieron la ciudad bajo el lema de <span>We're all equal in death.</span></p>
                 <br>
                 <p>Desde entonces, el festival Not the end se celebra una vez al año en alguna ciudad del mundo, buscando mantener vivo el espíritu festivo tras la muerte, y respetando el lema original de igualdad e inclusión.</p>
-            </article>
+          </article>
         </section>
-        <section >
+        <!-- -------------------------------------------M/L/XL/XXL gallery ---------------------------------------------->
+        <section class="d-none d-md-block">
             <h2 class="blueH2">Galeria</h2>
-            <article class=galeria>
-                <img src="../images/Assets/not-the-end/gallery/1.png">
-                <img src="../images/Assets/not-the-end/gallery/2.png">
-                <img src="../images/Assets/not-the-end/gallery/3.png">
-                <img src="../images/Assets/not-the-end/gallery/4.png">
-                <img src="../images/Assets/not-the-end/gallery/5.png">
-                <img src="../images/Assets/not-the-end/gallery/6.png">
-                <img src="../images/Assets/not-the-end/gallery/7.png">
-                <img src="../images/Assets/not-the-end/gallery/8.png">
+            <article class="row justify-items-center m-4">
+                <img src="../images/Assets/not-the-end/gallery/1.png" class="col-xs-10 col-md-6 col-lg-3 pb-4">
+                <img src="../images/Assets/not-the-end/gallery/2.png" class="col-xs-10 col-md-6 col-lg-3 pb-4">
+                <img src="../images/Assets/not-the-end/gallery/3.png" class="col-xs-10 col-md-6 col-lg-3 pb-4">
+                <img src="../images/Assets/not-the-end/gallery/4.png" class="col-xs-10 col-md-6 col-lg-3 pb-4">
+                <img src="../images/Assets/not-the-end/gallery/5.png" class="col-xs-10 col-md-6 col-lg-3 pb-4">
+                <img src="../images/Assets/not-the-end/gallery/6.png" class="col-xs-10 col-md-6 col-lg-3 pb-4">
+                <img src="../images/Assets/not-the-end/gallery/7.png" class="col-xs-10 col-md-6 col-lg-3 pb-4">
+                <img src="../images/Assets/not-the-end/gallery/8.png" class="col-xs-10 col-md-6 col-lg-3 pb-4">
             </article>
         </section>
+        <!-- -------------------------------------------S/XS gallery ---------------------------------------------->
+        <div id="carouselExampleControls" class="carousel slide m-4 d-md-none" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <img src="../images/Assets/not-the-end/gallery/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/Assets/not-the-end/gallery/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/Assets/not-the-end/gallery/3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>   
+        <!-- -------------------------------------------S/XS gallery ---------------------------------------------->
         <section>
             <article Class="winePCenterAlign">
                 <p>¡La próxima edición será en <a href="../pages/buenos-aires.html">Buenos Aires</a>!</p>
@@ -81,7 +105,7 @@
     </main>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <a href="https://ar.linkedin.com/in/s-carroaisum" class="text-decoration-none"><span class="col-md-4 mb-0 text-muted">&copy; 2022 Sofía Carro Aisum</span></a>
+        <a href="https://ar.linkedin.com/in/s-carroaisum" target="_blank"class="text-decoration-none"><span class="col-md-4 mb-0 text-muted">&copy; 2022 Sofía Carro Aisum</span></a>
         <a href="#" class="link-dark text-decoration-none">
             <img src="../images/up-arrow.png" width="40px" height="40px">
         </a>
