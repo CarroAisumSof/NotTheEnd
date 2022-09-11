@@ -1,14 +1,7 @@
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
-.mastheadSubpages {
-    background-color: map-get($color, ghost-blue);
-    align-items: flex-end;
-}
-
-.mastheadSubpages h1{
-    align-self: bottom;
-    font-family: Raleway;
-    font-size: map-get($fontSize, large);
-    color: map-get($color, ghost-yellow);
+.masthead {
+    font-family: raleway;
+    color: map-get($color, ghost-blue);
 }
 
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
