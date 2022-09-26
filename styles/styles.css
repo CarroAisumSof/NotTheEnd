@@ -1,8 +1,7 @@
 .winePCenterAlign, .winePLeftAlign {
   font-family: Raleway;
-  font-size: 24px;
+  font-size: 14px;
   color: #795062;
-  line-height: 1, 5;
   text-decoration: none;
 }
 
@@ -314,9 +313,14 @@
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
 /* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
 .blueH2 {
-  padding-left: 50px;
   font-family: raleway;
   font-size: 48px;
+  color: #6C7C95;
+}
+
+.blueH3 {
+  font-family: raleway;
+  font-size: 24px;
   color: #6C7C95;
 }
 
@@ -332,24 +336,17 @@
   color: #CCD3DE;
 }
 
-.galeria {
-  padding-left: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+.modal-fade {
+  width: 800px;
 }
 
-.galeria img {
-  margin-left: 20px;
-  margin-top: 20px;
-  transition: transform 0.5s;
-  justify-self: center;
-  align-self: center;
+.modal-body {
+  background-color: black;
+  position: absolute;
 }
-
-/* zoom */
-.galeria img:hover {
-  transform: scale(1.2);
+.modal-body img {
+  width: 100%;
+  height: auto;
 }
 
 .baires h3 {

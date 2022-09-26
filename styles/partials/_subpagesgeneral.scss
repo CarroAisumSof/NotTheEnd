@@ -12,9 +12,14 @@
 
 /* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
 .blueH2{
-    padding-left: 50px;
     font-family: raleway;
     font-size: map-get($fontSize, large);
+    color: map-get($color, ghost-blue);
+}
+
+.blueH3{
+    font-family: raleway;
+    font-size: map-get($fontSize, medium);
     color: map-get($color, ghost-blue);
 }
 
