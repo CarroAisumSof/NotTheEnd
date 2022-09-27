@@ -1,9 +1,15 @@
-.winePCenterAlign, .winePLeftAlign {
+.winePCenterAlign, .winePLeftAlign, .wineH3Left {
   font-family: Raleway;
+  font-size: 14px;
+  color: #795062;
+  text-decoration: none;
+}
+
+.wineH3 {
+  font-family: raleway;
   font-size: 24px;
   color: #795062;
-  line-height: 1, 5;
-  text-decoration: none;
+  text-align: center;
 }
 
 .registerForm {
@@ -287,7 +293,7 @@
 
 .whiteSection article div h3 {
   font-family: Raleway;
-  font-size: 24px;
+  font-size: 18px;
   color: #6C7C95;
   text-align: center;
 }
@@ -314,10 +320,19 @@
 /* ----------------------------------------------------------- Header Subpages ------------------------------------------------------------*/
 /* ----------------------------------------------------------Elementos generales---------------------------------------------------------- */
 .blueH2 {
-  padding-left: 50px;
   font-family: raleway;
   font-size: 48px;
   color: #6C7C95;
+}
+
+.blueH3 {
+  font-family: raleway;
+  font-size: 24px;
+  color: #6C7C95;
+}
+
+.wineH3Left {
+  font-size: 24px;
 }
 
 .winePCenterAlign {
@@ -332,32 +347,32 @@
   color: #CCD3DE;
 }
 
-.galeria {
-  padding-left: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+.gallery img {
+  cursor: pointer;
 }
 
-.galeria img {
-  margin-left: 20px;
-  margin-top: 20px;
-  transition: transform 0.5s;
-  justify-self: center;
-  align-self: center;
+.modal-fade {
+  width: 800px;
 }
 
-/* zoom */
-.galeria img:hover {
-  transform: scale(1.2);
+.modal-body {
+  background-color: black;
+  position: absolute;
+}
+.modal-body img {
+  width: 100%;
+  height: auto;
 }
 
 .baires h3 {
   color: #795062;
   font-family: raleway;
+  font-size: 24px !important;
 }
 .baires p {
   color: #6C7C95;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .card-cover {
