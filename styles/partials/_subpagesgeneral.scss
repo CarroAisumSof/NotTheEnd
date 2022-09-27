@@ -23,6 +23,11 @@
     color: map-get($color, ghost-blue);
 }
 
+.wineH3Left {
+    @extend %mainText;
+    font-size: 24px;
+}
+
 
 .winePLeftAlign{
     @extend %mainText;

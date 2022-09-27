@@ -1,8 +1,15 @@
-.winePCenterAlign, .winePLeftAlign {
+.winePCenterAlign, .winePLeftAlign, .wineH3Left {
   font-family: Raleway;
   font-size: 14px;
   color: #795062;
   text-decoration: none;
+}
+
+.wineH3 {
+  font-family: raleway;
+  font-size: 24px;
+  color: #795062;
+  text-align: center;
 }
 
 .registerForm {
@@ -324,6 +331,10 @@
   color: #6C7C95;
 }
 
+.wineH3Left {
+  font-size: 24px;
+}
+
 .winePCenterAlign {
   text-align: center;
 }
@@ -334,6 +345,10 @@
 
 .winePCenterAlign p a:hover {
   color: #CCD3DE;
+}
+
+.gallery img {
+  cursor: pointer;
 }
 
 .modal-fade {
@@ -352,9 +367,12 @@
 .baires h3 {
   color: #795062;
   font-family: raleway;
+  font-size: 24px !important;
 }
 .baires p {
   color: #6C7C95;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .card-cover {

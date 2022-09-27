@@ -4,3 +4,10 @@
     color: map-get($color, wine);
     text-decoration: none;
 }
+
+.wineH3{
+    font-family: raleway;
+    font-size: map-get($fontSize, medium);
+    color: map-get($color, wine);
+    text-align: center;
+}

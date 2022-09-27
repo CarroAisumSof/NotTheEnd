@@ -2,10 +2,14 @@
     h3 {
         color: map-get($color, wine);
         font-family: raleway;
+        font-size: 24px !important;
     }
     p{
         color: map-get($color, ghost-blue);
+        font-size: 18px;
+        margin-bottom: 30px;
     }
+
 }
 
 .card-cover {
